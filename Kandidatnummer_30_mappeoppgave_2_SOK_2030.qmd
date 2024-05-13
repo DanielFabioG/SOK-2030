@@ -1,0 +1,337 @@
+---
+format: 
+  pdf:
+    include-before-body:
+      - dokumentobjekter/texstuff/forsidesok2030mappe2.tex  
+    geometry:
+      - top=20mm
+      - left=20mm
+      - heightrounded
+    fontsize: 12pt
+    documentclass: scrartcl
+    papersize: a4
+    toc-title: "Innholdsfortegnelse"
+    toccolor: black
+echo: true
+warning: false
+bibliography: dokumentobjekter/texstuff/references_sok-2030.bib
+csl: dokumentobjekter/texstuff/norsk-apa-manual.csl
+crossref: 
+  lof-title: "Figurliste"
+  fig-title: "Figur"
+  lot-title: "Tabelliste"
+  tbl-title: "Tabell"
+header-includes:
+  - \usepackage{wrapfig}
+  - \usepackage{subcaption}
+  - \usepackage{amsmath}
+  - \usepackage{cancel}
+  - \usepackage{hyperref}
+  - \usepackage{tikz}
+  - \usepackage{tabularx}
+  - \usepackage{colortbl}
+  - \usepackage{xcolor}
+  - \renewcommand{\maketitle}{}
+  - \definecolor{cornflowerblue}{RGB}{100,149,237}
+  - \definecolor{darkgrey}{RGB}{220,220,220}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{} 
+  - \fancyhead[L]{\rightmark}
+  - \fancyhead[R]{\thepage}
+  - \fancyfoot[C]{\thepage}
+nocite: |
+  @*
+keep-tex: true
+---
+
+```{=tex}
+
+\thispagestyle{plain}
+\begin{center}
+    \Large
+    \textbf{Sammendrag}
+\end{center}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem mauris. Nunc ac metus quis ante vehicula iaculis sollicitudin a est. Sed ut sapien congue, imperdiet erat feugiat, laoreet urna. Donec non lorem ac lacus sagittis egestas. Aliquam mollis, metus id pharetra malesuada, elit orci tempor justo, id volutpat arcu enim efficitur velit. Sed elit urna, tincidunt id nunc eget, egestas maximus ante. Ut a odio porta, condimentum nulla et, ornare eros.
+
+Mauris risus ex, pellentesque eu faucibus sed, ultricies eleifend risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam et enim eros. Ut at arcu lectus. Nullam aliquam placerat sapien, vitae elementum diam maximus ac. Donec luctus ultrices mollis. Vivamus malesuada in lectus condimentum auctor. Nullam pharetra arcu at mauris eleifend auctor. Donec volutpat sem at purus tempus faucibus.
+
+Fusce a vehicula lectus. Sed fringilla aliquet libero. Nam varius congue mauris, ac pulvinar lectus pretium vel. Cras malesuada auctor magna sit amet convallis. Nulla id sem ipsum. Nullam ultrices gravida molestie. Curabitur auctor, tortor nec congue laoreet, lectus tellus ornare eros, et venenatis nibh tellus non sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pulvinar risus nisi, vel rhoncus magna suscipit ac. Proin odio massa, pretium at ipsum vel, mollis efficitur erat. Pellentesque sed leo massa. Mauris vitae turpis laoreet, pretium nulla eget, sodales urna. Mauris nisi arcu, mollis eu pretium vel, dictum in tellus. Sed quis ante a neque convallis finibus.
+
+Donec et sem sodales, consectetur ex non, hendrerit sapien. Pellentesque mi magna, auctor nec purus vel, mattis dictum orci. Pellentesque nisl felis, gravida a ex eget, interdum iaculis diam. Etiam feugiat bibendum est ut viverra. Vestibulum aliquam sapien et elit rutrum, ac ultricies quam vehicula. Etiam sagittis pretium nisi, vitae eleifend orci auctor a. Donec nec urna sed dui porttitor porta. Nam molestie neque id nibh elementum auctor. In hac habitasse platea dictumst. Nulla tincidunt gravida tortor, ut finibus nisl ornare efficitur. Proin porta bibendum dapibus.
+
+Nulla consequat lacus dolor. Fusce nibh nunc, condimentum non sem eget, feugiat viverra urna. Nam eros metus, dignissim eget odio id, facilisis varius enim. Donec a interdum eros. Nam vulputate in magna vel rutrum. Nam nec vestibulum eros. Sed placerat facilisis ligula, nec convallis purus aliquam non. Sed fringilla lacinia fermentum. Pellentesque auctor convallis nisi lacinia tincidunt. Nulla a consequat quam. Nulla eu consequat magna, vitae hendrerit dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+\newpage
+\hypersetup{linkcolor=black}
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+\renewcommand*{\figureautorefname}{Figur}
+\renewcommand*{\tableautorefname}{Tabell}
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\hypersetup{linkcolor=blue}
+\newpage
+```
+# Oppgave 1 (30%)
+
+Olivita AS ble etablert i 2002 av to professorer fra Universitetet i Tromsø (UiT). Selskapet tilbyr kosttilskuddet Olivita, som inneholder omega-3 og er utviklet for å støtte hjerte, ledd og immunforsvar. Produktet har vært patentbeskyttet frem til 2023, og Olivita har hatt eksklusiv rett til produksjon av dette omega-3 produktet. Etter patentens utløp har det nye selskapet Dr Choice AS kommet på markedet og tilbyr Easy Choice Omega-3. I markedet for omega-3 produkter vil Olivita AS fortsette å være en ledende aktør, mens Dr Choice AS vil utfordre som en nykommer.
+
+I dette marked er det følgende invers etterspørsel: $P = 990−\frac{1}{60}(Q_O+Q_C)$ hvor $Q_O$ er antall solgte flasker med Olivita, $Q_C$ er antall solgte flasker Easy Choice Omega-3 og P er pris per flaske av Omega-3 produktene. I produksjon av Omega-3 produktene vil begge bedriftene ha konstante marginalkostnader på kr 50 per produsert flaske. Faste kostnader for begge bedriftene er på 3 millioner kroner.
+
+a)  Hva blir optimal tilpasning i dette markedet når Olivita kan gjøre sine strategiske valg før konkurrenten, Dr Choice AS, gjør sitt valg?
+
+## Optimal tilpasning
+
+Ved å bruke Stackelberg-modellen kan vi finne optimal tilpasning i markedet. Stackelberg-modellen er en sekvensiell modell hvor kvantum er bedriftenes handlingsvariabler. Lederbedriften (Olivita AS) tar sine beslutninger først og bestemmer hvor mye som produseres som maksimerer deres egen profitt basert på at Dr Choice AS vil tilpasse seg deres volum med sitt kvantum som følgerbedrift.
+
+Den inverse etterspørselen i markedet er gitt ved $P = a−b(Q_O+Q_C)$ hvor $Q_O$ er antall solgte flasker med Olivita, $Q_C$ er antall solgte flasker Easy Choice Omega-3 og $P$ er pris per flaske av Omega-3 produktene. I produksjon av Omega-3 produktene vil begge bedriftene ha konstante marginalkostnader $c$ på kr 50 per produsert flaske. Faste kostnader $f_k$ for begge bedriftene er på 3 millioner kroner. $a = 990$ og $b = \frac{1}{60}$ og da blir den inverse etterspørselen $P = 990−\frac{1}{60}(Q_O+Q_C)$.
+
+Siden begge bedrifter har samme faste kostnader og marginale kostnader, kan vi bruke en felles profittfunksjon for begge bedriftene. Profittfunksjonen er gitt ved:
+
+$$\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{1}$$
+
+Tar så og deriverer profittfunksjonen mhp $Q_C$:
+
+$$\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{2}$$ løser for kvantum og setter den deriverte lik 0 for å finne reaksjonfunksjonen til Dr Choice AS
+
+$$ Q_C = \frac{a-b Q_O -c}{2b} \tag{3}$$
+
+Setter så reaksjonsfunksjonen til Dr Choice inn i profittfunksjonen til Olivita og deriveres mhp $Q_O$ og forenkles (ser egentlig mye verre ut):
+
+$$\frac{\partial \pi}{\partial Q_O} = \frac{a}{2}-bQ_O - \frac{c}{2} \tag{4}$$
+
+Ved å løse for $Q_O$ får vi optimalt kvantum for lederbedriften (Olivita), og substituerer inn tallverdier:
+
+$$Q{_O^*} = \frac{a-c}{2b} = \frac{(990 - 50)}{(2 \cdot \frac{1}{60})}  = 28200 \tag{5}$$ Optimalt kvantum for lederbedriften (Olivita) er 28200 flasker.
+
+Og for å finne ut optimalt kvantum for følgerbedriften (Dr Choice) setter vi inn $Q{_O^*}$ i reaksjonsfunksjonen til Dr Choice:
+
+$$Q{_C^*} = \frac{a-c}{4b} = \frac{(990 - 50)}{(4 \cdot \frac{1}{60})} = 14100 \tag{6}$$ Hvor optimalt kvantum for følgerbedriften (Dr Choice) blir 14100 flasker.
+
+Videre for å finne optimal pris i sluttmarkedet setter vi inn optimal $Q{_O^*}$ og $Q{_C^*}$ i den inverse etterspørselen:
+
+$$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(28200+14100) = 990 - 705 = 285 \tag{7}$$ Den optimale prisen i sluttmarkedet blir 285 kr per flaske.
+
+Så finner vi profitten til lederbedriften Olivita med å gange optimal pris med optimalt kvantum $Q{_O^*}$ og trekker fra marginal kostnader $c$ og faste kostnader $f_k$:
+
+$$ Q{_O^\pi} = \frac{(a-c)^2}{8b} - f_k =  \frac{(990-50)^2}{(8 \cdot \frac{1}{60})} - 3000000 = 3627000 \tag{8}$$ Profitten til Olivita AS blir å være 3.627.000 kroner.
+
+Til slutt for å finne profitten til følgerbedriften (Dr Choice) så repeterer vi forrige prosesss bare at vi ganger med optimalt kvantum for Dr Choice $Q{_C^*}$:
+
+$$Q{_O^\pi} = \frac{(a-c)^2}{16b} - f_k =  \frac{(990-50)^2}{(16 \cdot \frac{1}{60})} - 3000000 = 313500 \tag{9}$$ Og finner at profitten til Dr Choice AS blir å være 313.500 kroner.
+
+Den optimale tilpasningen blir 28200 kvantum solgt for Olivita mens Dr Choice vil tilpasse seg med halvparten av kvantumet på 14100 flasker.
+
+Totalt kvantum blir 42.300 kvantum solgt for begge bedriftene til en markedspris på 285 kroner per flaske.
+
+\clearpage
+
+b) Vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før konkurrenten gjør sitt valg?
+
+
+## Stackelberg modell sekvensielt eller simultan cournot
+
+For å finne ut om det vil være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice, så tar jeg å regner på en cournot modell for symmetriske bedrifter siden begge bedriftene har samme marginalkostnader.
+
+Starter likt som med stackelberg og bruker samme etterspørsel og profittfunksjoner:
+
+$$P = a - b(Q_O+Q_C) \tag{10}$$
+$$\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{11}$$
+Videre så deriverer jeg profittfunksjonene mhp $Q_O$ og $Q_C$:
+
+$$\frac{\partial \pi}{\partial Q_O} = a -b Q_O - b(Q_O+Q_C) -c \tag{12}$$
+$$\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{13}$$
+Og løser for $Q_O$ og $Q_C$:
+
+$$Q{_O^*} = \frac{a-c}{3b} = \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{14}$$
+$$Q{_C^*} = \frac{a-c}{3b} \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{15}$$
+Setter så inn $Q_O$ og $Q_C$ i etterspørselen for å finne optimal pris i sluttmarkedet:
+
+$$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666 = 363.33 \tag{16}$$
+Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg (42.300) og prisen blir lavere per enhet (285 kroner). Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner. 
+
+Lederbedriften (Olivia) vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. Totalt vil lederbedriften tjene 3.627.000 kroner under stackelberg og $(P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666$  kroner under cournot. Derfor vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
+
+\clearpage
+
+# Oppgave 2 (70%)
+
+Markedet for produksjon av mikroøl består av tre lokale bryggerier: Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri.
+
+Etterspørselen i dette markedet er gitt ved: $P = 175 − 4_Q$ hvor $P$ er markedspris per flaske mikroøl, $Q$ er totalt kvantum (antall tusen flasker), som er summen av produksjonen til de tre bryggeriene: $Q = Q_G + Q_B + Q_M$, der $Q_G$ er produsert kvantum for Graff Brygghus, $Q_b$ er produsert kvantum for Bryggeri 13 og $Q_M$ er produsert kvantum for Mack Mikrobryggeri.
+
+Mack Mikrobryggeri, som er en del av Mack Ølbryggeri, har en mer effektiv produksjonslinje enn de to andre, med konstante marginalkostnader på 7 kr per flaske, mens Graff Brygghus og Bryggeri 13 har marginalkostnader på 10 kr per flaske. Alle tre mikrobryggeriene har faste årlige kostnader på 300 000 kr. Styrene i selskapene Mack Mikrobryggeri og Bryggeri 13 har startet samtaler knyttet til mulig fusjon av disse to selskapene. Ved en fusjon vil all produksjon flyttes til Mack Mikrobryggeri. De faste kostnadene 3 vil også reduseres ved sammenslåing av selskapene, og totalt utgjøre kr 500.000 per år for det fusjonerte selskapet.
+
+## a) Vil en slik fusjon være lønnsom for de fusjonerte partene?
+
+Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under navnet Mack Mikrobrygg 13. Markedet for produksjon av mikroøl vi da bestå av to lokale produsenter: Mack Mikrobrygg 13 og Graff Brygghus. For å styrke sin posisjon i markedet, investerer Graff Brygghus i nytt og mer effektivt produksjonsutstyr, noe som reduserer deres variable kostnader til kr 7 per flaske. Denne investeringen vil gi selskapet økte faste kostnader på kr 200.000. Totale faste kostnader for begge bryggeriene er da på kr 500.000 for hvert av selskapene.
+
+I restaurantbransjen i Tromsø er Restaurant Gruppen Holdig (RGH) en sentral aktør, som har monopol i sitt segment. RGH kjøper sitt mikroøl fra de to lokale produsentene Mack Mikrobrygg 13 og Graff Brygghus. For å drifte sine restauranter har RGH faste kostnader på kr 600.000.
+
+Etterspørselen etter mikroøl i restaurantbransjen er lik: $P = 175 − 2Q$ hvor $Q$ er antall solgte flasker mikroøl (antall tusen flasker) for RGH og P er prisen for en flaske mikroøl til sluttbruker.
+
+For å ytterligere styrke sin posisjon i oppstrømsmarkedet, vurderer ledelsen i Mack Mikrobrygg 13 en fusjon med konkurrenten Graff Brygghus. Det antas at denne fusjonen ikke vil resultere i kostnadsbesparelser for bryggeriene.
+
+Som konsulent for styret i Mack Mikrobrygg 13, er du bedt om å analysere markedskonsekvensene av en potensiell fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus. Analysen skal omfatte en vurdering av dagens markedstilpasning og en sammenligning med tilpasningen etter en eventuell fusjon i oppstrømsmarkedet.
+
+## b) Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjon med Graff Brygghus?
+
+## c) Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus.
+
+\clearpage
+
+# Referanser
+
+::: {#refs}
+:::
+
+\clearpage
+
+\appendix
+
+\section {Appendix Generell KI bruk}
+
+I løpet av koden så kan det ses mange \# kommentarer der det er skrevet for eks "#fillbetween q1 and q2". Når jeg skriver kode i Visual Studio Code så finnes det en plugin som heter Github Copilot. Når vi skriver slike kommentarer så kan den foresøke å fullføre kodelinjene mens jeg skriver de. Noen ganger klarer den det, men andre ikke. Det er vanskelig å dokumentere hvert bruk der den er brukt siden det "går veldig fort" men siden det ikke er fått på plass en slik dokumentasjon så kan all python kode der det er brukt kommentarer antas som at det er brukt Github Copilot. Nærmere info om dette KI verktøyet kan ses på <https://github.com/features/copilot>
+
+\clearpage
+
+\section {Appendix Kode}
+
+```{python}
+import sympy as sp
+from matplotlib import pyplot as plt
+import numpy as np
+
+q_o, q_c,c, a, b, pi,i, f_k=sp.symbols('q_o q_c c a b pi i f_k')
+
+
+# c er konstante marginalkostnader
+# a og b er parametre i etterspørselsfunksjonen som er gitt ved P = a - bQ
+# hvor etterspørselen er P = 990-1/60(Q_o+Q_c)
+#faste kostnader for begge bedrifter er 3 millioner
+c = 50
+a = 990
+b = 1/60
+f_k = 3000000
+def P_demand(Q,a,b):
+    return a-b*Q
+
+def profit(q_o,q_c,c,a,b):
+    return (P_demand(q_o+q_c,a,b)-c)*q_o
+    
+```
+
+```{python}
+# Deriverer profittfunksjon til Dr Choice
+d_profit2_Q=sp.diff(profit(q_c,q_o,c,a,b),q_c)
+d_profit2_Q
+```
+
+```{python}
+
+# Setter den deriverte lik 0 og finner reaksjonsfunksjon til Dr choice
+Q2_sol1=sp.solve(d_profit2_Q,q_c)[0]
+Q2_sol1
+
+```
+
+```{python}
+# På trinn 1 settes reaksjonsfunksjonene til Dr Choice inn i Olivita 
+#sin profittfunksjon, og deriverer dette utrykket mhp q_o
+d_profit1_Q=sp.diff(profit(q_o,Q2_sol1,c,a,b),q_o)
+d_profit1_Q
+```
+
+```{python}
+
+# For å finne optimalt kvantum til lederbedriften (Olivita)
+#setter vi uttrykket over lik 0
+Q1_sol=sp.solve(d_profit1_Q,q_o)[0]
+Q1_sol
+```
+
+```{python}
+# Optimalt kvantum for Dr Choice
+Q2_sol2=Q2_sol1.subs({q_o:Q1_sol})
+Q2_sol2
+```
+
+```{python}
+def P_demand(q1,q2):
+    return a-b*(q1+q2)
+    
+# Optimal pris i sluttmarkedet:
+P_opt=P_demand(q_o,q_c).subs({q_o:Q1_sol,q_c:Q2_sol2})
+
+P_opt
+```
+
+```{python}
+# profitt for lederbedrift (Olivita):
+sp.simplify((P_opt-c)*Q1_sol-f_k)
+```
+
+```{python}
+# profitt for følgerbedrift (Dr Choice):
+sp.simplify((P_opt-c)*Q2_sol2-f_k)
+```
+
+```{python}
+a,b,c  = sp.symbols('a b c')
+
+stackelberg=sp.lambdify(
+    (a,b,c), 
+    (Q1_sol,Q2_sol2)
+)
+
+stackelberg(200,1,60)
+```
+
+```{python}
+# regner cournot likevekt
+q1, q2,c1,c2, a, b=sp.symbols('q1 q2 c1 c2 a b')
+
+a = 990
+b = 1/60
+c = 50
+def P_demand(Q,a,b):
+    return a-b*Q
+
+def profit(q1,q2,c,a,b):
+    return (P_demand(q1+q2,a,b)-c)*q1
+
+```
+
+```{python}
+d_profit1_Q=sp.diff(profit(q1,q2,c,a,b),q1)
+d_profit2_Q=sp.diff(profit(q2,q1,c,a,b),q2)
+
+display(d_profit1_Q)
+display(d_profit2_Q)
+
+```
+
+
+```{python}
+sol=sp.solve([d_profit1_Q,d_profit2_Q],[q1,q2])
+
+display((sol[q1]))
+display((sol[q2]))
+```
+
+```{python}
+def P_demand(q1,q2):
+    return a-b*(q1+q2)
+# Optimal pris i sluttmarkedet:
+P_opt=P_demand(q1,q2).subs({q1:sol[q1],q2:sol[q2]})
+P_opt
+```
+
+```{python}
+# profitt for lederbedrift (Olivita):
+sp.simplify((P_opt-c)*sol[q1]-f_k)
+```
+

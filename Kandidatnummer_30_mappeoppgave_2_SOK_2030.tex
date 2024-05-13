@@ -1,0 +1,745 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+  a4paper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[top=20mm,left=20mm,heightrounded]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\renewcommand{\maketitle}{}
+\definecolor{cornflowerblue}{RGB}{100,149,237}
+\definecolor{darkgrey}{RGB}{220,220,220}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\thepage}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Figurliste}
+\else
+  \newcommand\listfigurename{Figurliste}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Tabelliste}
+\else
+  \newcommand\listtablename{Tabelliste}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figur}
+\else
+  \newcommand\figurename{Figur}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabell}
+\else
+  \newcommand\tablename{Tabell}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+
+\newgeometry{left=0cm, right=0cm, top=0cm, bottom=0cm}
+\vspace*{0.5cm} 
+\hspace*{1.5cm}\includegraphics[width=10cm]{dokumentobjekter/texstuff/UiT_Logo_Bok_Bla_RGB.png} 
+
+
+\begin{flushleft}
+    \vspace*{0.5cm}
+    \hspace*{2.5cm}{\color{black}\fontsize{11}{13.2}\selectfont Handelshøgskolen ved UiT \\[0.2em]
+    \hspace*{2.5cm}\color{black}\fontsize{8}{13.2}\selectfont Fakultet for biovitenskap, fiskeri og økonomi \\[0.2em]
+    \hspace*{2.5cm}\large{\color{black}\textbf{Mappeoppgave 2}}  \\[0.5em]
+    \hspace*{2.5cm}\color{black}\fontsize{12}{14.4}\selectfont Næringsøkonomi og konkurransestrategi\\[0.5em]
+\hspace*{2.5cm}\color{black}\fontsize{11}{13.2}\selectfont Kandidatnummer: 30 \\[0.5em]
+    \hspace*{2.5cm}\color{black}\fontsize{11}{13.2}\selectfont SOK-2030, Vår 2024 \\[0.5em]
+    \hspace*{2.0cm}
+    \par}
+\end{flushleft} 
+
+
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south west, inner sep=0] at (current page.south west) {\includegraphics[width=\paperwidth]{dokumentobjekter/texstuff/forside_bilde.png}};
+\end{tikzpicture}
+
+
+\newgeometry{left=20mm, right=20mm, top=20mm, bottom=20mm}
+
+
+
+
+\thispagestyle{plain}
+\begin{center}
+    \Large
+    \textbf{Sammendrag}
+\end{center}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem mauris. Nunc ac metus quis ante vehicula iaculis sollicitudin a est. Sed ut sapien congue, imperdiet erat feugiat, laoreet urna. Donec non lorem ac lacus sagittis egestas. Aliquam mollis, metus id pharetra malesuada, elit orci tempor justo, id volutpat arcu enim efficitur velit. Sed elit urna, tincidunt id nunc eget, egestas maximus ante. Ut a odio porta, condimentum nulla et, ornare eros.
+
+Mauris risus ex, pellentesque eu faucibus sed, ultricies eleifend risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam et enim eros. Ut at arcu lectus. Nullam aliquam placerat sapien, vitae elementum diam maximus ac. Donec luctus ultrices mollis. Vivamus malesuada in lectus condimentum auctor. Nullam pharetra arcu at mauris eleifend auctor. Donec volutpat sem at purus tempus faucibus.
+
+Fusce a vehicula lectus. Sed fringilla aliquet libero. Nam varius congue mauris, ac pulvinar lectus pretium vel. Cras malesuada auctor magna sit amet convallis. Nulla id sem ipsum. Nullam ultrices gravida molestie. Curabitur auctor, tortor nec congue laoreet, lectus tellus ornare eros, et venenatis nibh tellus non sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pulvinar risus nisi, vel rhoncus magna suscipit ac. Proin odio massa, pretium at ipsum vel, mollis efficitur erat. Pellentesque sed leo massa. Mauris vitae turpis laoreet, pretium nulla eget, sodales urna. Mauris nisi arcu, mollis eu pretium vel, dictum in tellus. Sed quis ante a neque convallis finibus.
+
+Donec et sem sodales, consectetur ex non, hendrerit sapien. Pellentesque mi magna, auctor nec purus vel, mattis dictum orci. Pellentesque nisl felis, gravida a ex eget, interdum iaculis diam. Etiam feugiat bibendum est ut viverra. Vestibulum aliquam sapien et elit rutrum, ac ultricies quam vehicula. Etiam sagittis pretium nisi, vitae eleifend orci auctor a. Donec nec urna sed dui porttitor porta. Nam molestie neque id nibh elementum auctor. In hac habitasse platea dictumst. Nulla tincidunt gravida tortor, ut finibus nisl ornare efficitur. Proin porta bibendum dapibus.
+
+Nulla consequat lacus dolor. Fusce nibh nunc, condimentum non sem eget, feugiat viverra urna. Nam eros metus, dignissim eget odio id, facilisis varius enim. Donec a interdum eros. Nam vulputate in magna vel rutrum. Nam nec vestibulum eros. Sed placerat facilisis ligula, nec convallis purus aliquam non. Sed fringilla lacinia fermentum. Pellentesque auctor convallis nisi lacinia tincidunt. Nulla a consequat quam. Nulla eu consequat magna, vitae hendrerit dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+\newpage
+\hypersetup{linkcolor=black}
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+\renewcommand*{\figureautorefname}{Figur}
+\renewcommand*{\tableautorefname}{Tabell}
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\hypersetup{linkcolor=blue}
+\newpage
+
+\section{Oppgave 1 (30\%)}\label{oppgave-1-30}
+
+Olivita AS ble etablert i 2002 av to professorer fra Universitetet i
+Tromsø (UiT). Selskapet tilbyr kosttilskuddet Olivita, som inneholder
+omega-3 og er utviklet for å støtte hjerte, ledd og immunforsvar.
+Produktet har vært patentbeskyttet frem til 2023, og Olivita har hatt
+eksklusiv rett til produksjon av dette omega-3 produktet. Etter
+patentens utløp har det nye selskapet Dr Choice AS kommet på markedet og
+tilbyr Easy Choice Omega-3. I markedet for omega-3 produkter vil Olivita
+AS fortsette å være en ledende aktør, mens Dr Choice AS vil utfordre som
+en nykommer.
+
+I dette marked er det følgende invers etterspørsel:
+\(P = 990−\frac{1}{60}(Q_O+Q_C)\) hvor \(Q_O\) er antall solgte flasker
+med Olivita, \(Q_C\) er antall solgte flasker Easy Choice Omega-3 og P
+er pris per flaske av Omega-3 produktene. I produksjon av Omega-3
+produktene vil begge bedriftene ha konstante marginalkostnader på kr 50
+per produsert flaske. Faste kostnader for begge bedriftene er på 3
+millioner kroner.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Hva blir optimal tilpasning i dette markedet når Olivita kan gjøre
+  sine strategiske valg før konkurrenten, Dr Choice AS, gjør sitt valg?
+\end{enumerate}
+
+\subsection{Optimal tilpasning}\label{optimal-tilpasning}
+
+Ved å bruke Stackelberg-modellen kan vi finne optimal tilpasning i
+markedet. Stackelberg-modellen er en sekvensiell modell hvor kvantum er
+bedriftenes handlingsvariabler. Lederbedriften (Olivita AS) tar sine
+beslutninger først og bestemmer hvor mye som produseres som maksimerer
+deres egen profitt basert på at Dr Choice AS vil tilpasse seg deres
+volum med sitt kvantum som følgerbedrift.
+
+Den inverse etterspørselen i markedet er gitt ved \(P = a−b(Q_O+Q_C)\)
+hvor \(Q_O\) er antall solgte flasker med Olivita, \(Q_C\) er antall
+solgte flasker Easy Choice Omega-3 og \(P\) er pris per flaske av
+Omega-3 produktene. I produksjon av Omega-3 produktene vil begge
+bedriftene ha konstante marginalkostnader \(c\) på kr 50 per produsert
+flaske. Faste kostnader \(f_k\) for begge bedriftene er på 3 millioner
+kroner. \(a = 990\) og \(b = \frac{1}{60}\) og da blir den inverse
+etterspørselen \(P = 990−\frac{1}{60}(Q_O+Q_C)\).
+
+Siden begge bedrifter har samme faste kostnader og marginale kostnader,
+kan vi bruke en felles profittfunksjon for begge bedriftene.
+Profittfunksjonen er gitt ved:
+
+\[\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{1}\]
+
+Tar så og deriverer profittfunksjonen mhp \(Q_C\):
+
+\[\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{2}\]
+løser for kvantum og setter den deriverte lik 0 for å finne
+reaksjonfunksjonen til Dr Choice AS
+
+\[ Q_C = \frac{a-b Q_O -c}{2b} \tag{3}\]
+
+Setter så reaksjonsfunksjonen til Dr Choice inn i profittfunksjonen til
+Olivita og deriveres mhp \(Q_O\) og forenkles (ser egentlig mye verre
+ut):
+
+\[\frac{\partial \pi}{\partial Q_O} = \frac{a}{2}-bQ_O - \frac{c}{2} \tag{4}\]
+
+Ved å løse for \(Q_O\) får vi optimalt kvantum for lederbedriften
+(Olivita), og substituerer inn tallverdier:
+
+\[Q{_O^*} = \frac{a-c}{2b} = \frac{(990 - 50)}{(2 \cdot \frac{1}{60})}  = 28200 \tag{5}\]
+Optimalt kvantum for lederbedriften (Olivita) er 28200 flasker.
+
+Og for å finne ut optimalt kvantum for følgerbedriften (Dr Choice)
+setter vi inn \(Q{_O^*}\) i reaksjonsfunksjonen til Dr Choice:
+
+\[Q{_C^*} = \frac{a-c}{4b} = \frac{(990 - 50)}{(4 \cdot \frac{1}{60})} = 14100 \tag{6}\]
+Hvor optimalt kvantum for følgerbedriften (Dr Choice) blir 14100
+flasker.
+
+Videre for å finne optimal pris i sluttmarkedet setter vi inn optimal
+\(Q{_O^*}\) og \(Q{_C^*}\) i den inverse etterspørselen:
+
+\[P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(28200+14100) = 990 - 705 = 285 \tag{7}\]
+Den optimale prisen i sluttmarkedet blir 285 kr per flaske.
+
+Så finner vi profitten til lederbedriften Olivita med å gange optimal
+pris med optimalt kvantum \(Q{_O^*}\) og trekker fra marginal kostnader
+\(c\) og faste kostnader \(f_k\):
+
+\[ Q{_O^\pi} = \frac{(a-c)^2}{8b} - f_k =  \frac{(990-50)^2}{(8 \cdot \frac{1}{60})} - 3000000 = 3627000 \tag{8}\]
+Profitten til Olivita AS blir å være 3.627.000 kroner.
+
+Til slutt for å finne profitten til følgerbedriften (Dr Choice) så
+repeterer vi forrige prosesss bare at vi ganger med optimalt kvantum for
+Dr Choice \(Q{_C^*}\):
+
+\[Q{_O^\pi} = \frac{(a-c)^2}{16b} - f_k =  \frac{(990-50)^2}{(16 \cdot \frac{1}{60})} - 3000000 = 313500 \tag{9}\]
+Og finner at profitten til Dr Choice AS blir å være 313.500 kroner.
+
+Den optimale tilpasningen blir 28200 kvantum solgt for Olivita mens Dr
+Choice vil tilpasse seg med halvparten av kvantumet på 14100 flasker.
+
+Totalt kvantum blir 42.300 kvantum solgt for begge bedriftene til en
+markedspris på 285 kroner per flaske.
+
+\clearpage
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg
+  før konkurrenten gjør sitt valg?
+\end{enumerate}
+
+\subsection{Stackelberg modell sekvensielt eller simultan
+cournot}\label{stackelberg-modell-sekvensielt-eller-simultan-cournot}
+
+For å finne ut om det vil være en fordel for Olivita å ha mulighet til å
+gjøre sine valg før Dr Choice, så tar jeg å regner på en cournot modell
+for symmetriske bedrifter siden begge bedriftene har samme
+marginalkostnader.
+
+Starter likt som med stackelberg og bruker samme etterspørsel og
+profittfunksjoner:
+
+\[P = a - b(Q_O+Q_C) \tag{10}\] \[\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{11}\]
+Videre så deriverer jeg profittfunksjonene mhp \(Q_O\) og \(Q_C\):
+
+\[\frac{\partial \pi}{\partial Q_O} = a -b Q_O - b(Q_O+Q_C) -c \tag{12}\]
+\[\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{13}\]
+Og løser for \(Q_O\) og \(Q_C\):
+
+\[Q{_O^*} = \frac{a-c}{3b} = \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{14}\]
+\[Q{_C^*} = \frac{a-c}{3b} \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{15}\]
+Setter så inn \(Q_O\) og \(Q_C\) i etterspørselen for å finne optimal
+pris i sluttmarkedet:
+
+\[P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666 = 363.33 \tag{16}\]
+Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at
+lederbedriften setter prisen først, siden det vil være større kvantum
+produsert under stackelberg (42.300) og prisen blir lavere per enhet
+(285 kroner). Dette vil føre til at flere kunder vil kjøpe produktet og
+det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette
+tilfellet blir totalt kvantum produsert under cournot noe lavere på
+37.600, og prisen per enhet noe dyrere på 363.33 kroner.
+
+Lederbedriften (Olivia) vil også tjene mer på sekvensielt valg under
+stackelberg enn cournot, siden lederbedriften kan sette kvantum
+produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til
+at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer
+om kvantum solgt. Totalt vil lederbedriften tjene 3.627.000 kroner under
+stackelberg og
+\((P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666\)
+kroner under cournot. Derfor vil det være en fordel for Olivita å ha
+mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
+
+\clearpage
+
+\section{Oppgave 2 (70\%)}\label{oppgave-2-70}
+
+Markedet for produksjon av mikroøl består av tre lokale bryggerier:
+Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri.
+
+Etterspørselen i dette markedet er gitt ved: \(P = 175 − 4_Q\) hvor
+\(P\) er markedspris per flaske mikroøl, \(Q\) er totalt kvantum (antall
+tusen flasker), som er summen av produksjonen til de tre bryggeriene:
+\(Q = Q_G + Q_B + Q_M\), der \(Q_G\) er produsert kvantum for Graff
+Brygghus, \(Q_b\) er produsert kvantum for Bryggeri 13 og \(Q_M\) er
+produsert kvantum for Mack Mikrobryggeri.
+
+Mack Mikrobryggeri, som er en del av Mack Ølbryggeri, har en mer
+effektiv produksjonslinje enn de to andre, med konstante
+marginalkostnader på 7 kr per flaske, mens Graff Brygghus og Bryggeri 13
+har marginalkostnader på 10 kr per flaske. Alle tre mikrobryggeriene har
+faste årlige kostnader på 300 000 kr. Styrene i selskapene Mack
+Mikrobryggeri og Bryggeri 13 har startet samtaler knyttet til mulig
+fusjon av disse to selskapene. Ved en fusjon vil all produksjon flyttes
+til Mack Mikrobryggeri. De faste kostnadene 3 vil også reduseres ved
+sammenslåing av selskapene, og totalt utgjøre kr 500.000 per år for det
+fusjonerte selskapet.
+
+\subsection{a) Vil en slik fusjon være lønnsom for de fusjonerte
+partene?}\label{a-vil-en-slik-fusjon-vuxe6re-luxf8nnsom-for-de-fusjonerte-partene}
+
+Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og
+Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under
+navnet Mack Mikrobrygg 13. Markedet for produksjon av mikroøl vi da
+bestå av to lokale produsenter: Mack Mikrobrygg 13 og Graff Brygghus.
+For å styrke sin posisjon i markedet, investerer Graff Brygghus i nytt
+og mer effektivt produksjonsutstyr, noe som reduserer deres variable
+kostnader til kr 7 per flaske. Denne investeringen vil gi selskapet økte
+faste kostnader på kr 200.000. Totale faste kostnader for begge
+bryggeriene er da på kr 500.000 for hvert av selskapene.
+
+I restaurantbransjen i Tromsø er Restaurant Gruppen Holdig (RGH) en
+sentral aktør, som har monopol i sitt segment. RGH kjøper sitt mikroøl
+fra de to lokale produsentene Mack Mikrobrygg 13 og Graff Brygghus. For
+å drifte sine restauranter har RGH faste kostnader på kr 600.000.
+
+Etterspørselen etter mikroøl i restaurantbransjen er lik:
+\(P = 175 − 2Q\) hvor \(Q\) er antall solgte flasker mikroøl (antall
+tusen flasker) for RGH og P er prisen for en flaske mikroøl til
+sluttbruker.
+
+For å ytterligere styrke sin posisjon i oppstrømsmarkedet, vurderer
+ledelsen i Mack Mikrobrygg 13 en fusjon med konkurrenten Graff Brygghus.
+Det antas at denne fusjonen ikke vil resultere i kostnadsbesparelser for
+bryggeriene.
+
+Som konsulent for styret i Mack Mikrobrygg 13, er du bedt om å analysere
+markedskonsekvensene av en potensiell fusjon mellom Mack Mikrobrygg 13
+og Graff Brygghus. Analysen skal omfatte en vurdering av dagens
+markedstilpasning og en sammenligning med tilpasningen etter en
+eventuell fusjon i oppstrømsmarkedet.
+
+\subsection{b) Basert på din analyse, vil du anbefale styret i Mack
+Mikrobrygg 13 å gjennomføre fusjon med Graff
+Brygghus?}\label{b-basert-puxe5-din-analyse-vil-du-anbefale-styret-i-mack-mikrobrygg-13-uxe5-gjennomfuxf8re-fusjon-med-graff-brygghus}
+
+\subsection{c) Hva blir de samfunnsøkonomiske konsekvensene av en fusjon
+mellom Mack Mikrobrygg 13 og Graff
+Brygghus.}\label{c-hva-blir-de-samfunnsuxf8konomiske-konsekvensene-av-en-fusjon-mellom-mack-mikrobrygg-13-og-graff-brygghus.}
+
+\clearpage
+
+\section{Referanser}\label{referanser}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-pepall_industrial_2014}
+Pepall, L., Richards, D. J. \& Norman, G. (2014). \emph{Industrial
+organization: Contemporary theory and empirical applications} (Fifth
+edition). Wiley.
+
+\end{CSLReferences}
+
+\clearpage
+
+\appendix
+
+\section {Appendix Generell KI bruk}
+
+I løpet av koden så kan det ses mange \# kommentarer der det er skrevet
+for eks ``\#fillbetween q1 and q2''. Når jeg skriver kode i Visual
+Studio Code så finnes det en plugin som heter Github Copilot. Når vi
+skriver slike kommentarer så kan den foresøke å fullføre kodelinjene
+mens jeg skriver de. Noen ganger klarer den det, men andre ikke. Det er
+vanskelig å dokumentere hvert bruk der den er brukt siden det ``går
+veldig fort'' men siden det ikke er fått på plass en slik dokumentasjon
+så kan all python kode der det er brukt kommentarer antas som at det er
+brukt Github Copilot. Nærmere info om dette KI verktøyet kan ses på
+\url{https://github.com/features/copilot}
+
+\clearpage
+
+\section {Appendix Kode}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ sympy }\ImportTok{as}\NormalTok{ sp}
+\ImportTok{from}\NormalTok{ matplotlib }\ImportTok{import}\NormalTok{ pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\NormalTok{q\_o, q\_c,c, a, b, pi,i, f\_k}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}q\_o q\_c c a b pi i f\_k\textquotesingle{}}\NormalTok{)}
+
+
+\CommentTok{\# c er konstante marginalkostnader}
+\CommentTok{\# a og b er parametre i etterspørselsfunksjonen som er gitt ved P = a {-} bQ}
+\CommentTok{\# hvor etterspørselen er P = 990{-}1/60(Q\_o+Q\_c)}
+\CommentTok{\#faste kostnader for begge bedrifter er 3 millioner}
+\NormalTok{c }\OperatorTok{=} \DecValTok{50}
+\NormalTok{a }\OperatorTok{=} \DecValTok{990}
+\NormalTok{b }\OperatorTok{=} \DecValTok{1}\OperatorTok{/}\DecValTok{60}
+\NormalTok{f\_k }\OperatorTok{=} \DecValTok{3000000}
+\KeywordTok{def}\NormalTok{ P\_demand(Q,a,b):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{Q}
+
+\KeywordTok{def}\NormalTok{ profit(q\_o,q\_c,c,a,b):}
+    \ControlFlowTok{return}\NormalTok{ (P\_demand(q\_o}\OperatorTok{+}\NormalTok{q\_c,a,b)}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{q\_o}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Deriverer profittfunksjon til Dr Choice}
+\NormalTok{d\_profit2\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_c,q\_o,c,a,b),q\_c)}
+\NormalTok{d\_profit2\_Q}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle - 0.0333333333333333 q_{c} - 0.0166666666666667 q_{o} + 940$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Setter den deriverte lik 0 og finner reaksjonsfunksjon til Dr choice}
+\NormalTok{Q2\_sol1}\OperatorTok{=}\NormalTok{sp.solve(d\_profit2\_Q,q\_c)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Q2\_sol1}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 28200.0 - 0.5 q_{o}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# På trinn 1 settes reaksjonsfunksjonene til Dr Choice inn i Olivita }
+\CommentTok{\#sin profittfunksjon, og deriverer dette utrykket mhp q\_o}
+\NormalTok{d\_profit1\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_o,Q2\_sol1,c,a,b),q\_o)}
+\NormalTok{d\_profit1\_Q}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 470.0 - 0.0166666666666667 q_{o}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# For å finne optimalt kvantum til lederbedriften (Olivita)}
+\CommentTok{\#setter vi uttrykket over lik 0}
+\NormalTok{Q1\_sol}\OperatorTok{=}\NormalTok{sp.solve(d\_profit1\_Q,q\_o)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Q1\_sol}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 28200.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Optimalt kvantum for Dr Choice}
+\NormalTok{Q2\_sol2}\OperatorTok{=}\NormalTok{Q2\_sol1.subs(\{q\_o:Q1\_sol\})}
+\NormalTok{Q2\_sol2}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 14100.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ P\_demand(q1,q2):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{(q1}\OperatorTok{+}\NormalTok{q2)}
+    
+\CommentTok{\# Optimal pris i sluttmarkedet:}
+\NormalTok{P\_opt}\OperatorTok{=}\NormalTok{P\_demand(q\_o,q\_c).subs(\{q\_o:Q1\_sol,q\_c:Q2\_sol2\})}
+
+\NormalTok{P\_opt}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 285.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for lederbedrift (Olivita):}
+\NormalTok{sp.simplify((P\_opt}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{Q1\_sol}\OperatorTok{{-}}\NormalTok{f\_k)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 3627000.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for følgerbedrift (Dr Choice):}
+\NormalTok{sp.simplify((P\_opt}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{Q2\_sol2}\OperatorTok{{-}}\NormalTok{f\_k)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 313500.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a,b,c  }\OperatorTok{=}\NormalTok{ sp.symbols(}\StringTok{\textquotesingle{}a b c\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{stackelberg}\OperatorTok{=}\NormalTok{sp.lambdify(}
+\NormalTok{    (a,b,c), }
+\NormalTok{    (Q1\_sol,Q2\_sol2)}
+\NormalTok{)}
+
+\NormalTok{stackelberg(}\DecValTok{200}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{60}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+(28200.0, 14100.0)
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# regner cournot likevekt}
+\NormalTok{q1, q2,c1,c2, a, b}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}q1 q2 c1 c2 a b\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{a }\OperatorTok{=} \DecValTok{990}
+\NormalTok{b }\OperatorTok{=} \DecValTok{1}\OperatorTok{/}\DecValTok{60}
+\NormalTok{c }\OperatorTok{=} \DecValTok{50}
+\KeywordTok{def}\NormalTok{ P\_demand(Q,a,b):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{Q}
+
+\KeywordTok{def}\NormalTok{ profit(q1,q2,c,a,b):}
+    \ControlFlowTok{return}\NormalTok{ (P\_demand(q1}\OperatorTok{+}\NormalTok{q2,a,b)}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{q1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_profit1\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q1,q2,c,a,b),q1)}
+\NormalTok{d\_profit2\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q2,q1,c,a,b),q2)}
+
+\NormalTok{display(d\_profit1\_Q)}
+\NormalTok{display(d\_profit2\_Q)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle - 0.0333333333333333 q_{1} - 0.0166666666666667 q_{2} + 940$
+
+$\displaystyle - 0.0166666666666667 q_{1} - 0.0333333333333333 q_{2} + 940$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sol}\OperatorTok{=}\NormalTok{sp.solve([d\_profit1\_Q,d\_profit2\_Q],[q1,q2])}
+
+\NormalTok{display((sol[q1]))}
+\NormalTok{display((sol[q2]))}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 18800.0$
+
+$\displaystyle 18800.0$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ P\_demand(q1,q2):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{(q1}\OperatorTok{+}\NormalTok{q2)}
+\CommentTok{\# Optimal pris i sluttmarkedet:}
+\NormalTok{P\_opt}\OperatorTok{=}\NormalTok{P\_demand(q1,q2).subs(\{q1:sol[q1],q2:sol[q2]\})}
+\NormalTok{P\_opt}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 363.333333333333$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for lederbedrift (Olivita):}
+\NormalTok{sp.simplify((P\_opt}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{sol[q1]}\OperatorTok{{-}}\NormalTok{f\_k)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 2890666.66666667$
+
+
+
+\end{document}
