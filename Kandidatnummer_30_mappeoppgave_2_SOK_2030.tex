@@ -321,7 +321,7 @@ millioner kroner.
 
 \subsection{Optimal tilpasning}\label{optimal-tilpasning}
 
-Ved å bruke Stackelberg-modellen kan vi finne optimal tilpasning i
+Ved å bruke en stackelberg modell kan vi finne optimal tilpasning i
 markedet. Stackelberg-modellen er en sekvensiell modell hvor kvantum er
 bedriftenes handlingsvariabler. Lederbedriften (Olivita AS) tar sine
 beslutninger først og bestemmer hvor mye som produseres som maksimerer
@@ -427,8 +427,8 @@ Og løser for \(Q_O\) og \(Q_C\):
 
 \[Q{_O^*} = \frac{a-c}{3b} = \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{14}\]
 \[Q{_C^*} = \frac{a-c}{3b} \frac{(990-50)}{(3 \cdot \frac{1}{60})} = 18800 \tag{15}\]
-Setter så inn \(Q_O\) og \(Q_C\) i etterspørselen for å finne optimal
-pris i sluttmarkedet:
+Setter så inn \(Q{_O^*}\) og \(Q{_C^*}\) i etterspørselen for å finne
+optimal pris i sluttmarkedet:
 
 \[P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666 = 363.33 \tag{16}\]
 Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at
@@ -453,6 +453,9 @@ mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
 
 \section{Oppgave 2 (70\%)}\label{oppgave-2-70}
 
+\subsection{Markedet for mikroøl før
+fusjon}\label{markedet-for-mikrouxf8l-fuxf8r-fusjon}
+
 Markedet for produksjon av mikroøl består av tre lokale bryggerier:
 Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri.
 
@@ -470,12 +473,72 @@ har marginalkostnader på 10 kr per flaske. Alle tre mikrobryggeriene har
 faste årlige kostnader på 300 000 kr. Styrene i selskapene Mack
 Mikrobryggeri og Bryggeri 13 har startet samtaler knyttet til mulig
 fusjon av disse to selskapene. Ved en fusjon vil all produksjon flyttes
-til Mack Mikrobryggeri. De faste kostnadene 3 vil også reduseres ved
+til Mack Mikrobryggeri. De faste kostnadene vil også reduseres ved
 sammenslåing av selskapene, og totalt utgjøre kr 500.000 per år for det
 fusjonerte selskapet.
 
+For å finne ut om en fusjon vil være lønnsom for markedet til
+mikrobryggeriene partene så regner vi ved cournot modell for
+assymetriske bedrifter først og ser på hva profitten blir for hvert
+bryggeri før fusjon.
+
+Etterspørselfunksjonen er som tidligere gitt ved:
+
+\[P = a - b(Q_G+Q_B+Q_M) \tag{17}\] Lager så en felles profittfunksjon
+for de tre bryggeriene:
+
+\[\pi = Q_G(a-b(Q_G+Q_B+Q_M)-c) \tag{18}\] Deriverer profittfunksjonen
+mhp \(Q_G\) og setter \(c_G\) = 10:
+
+\[\frac{\partial \pi}{\partial Q_G} = a - bQ_G - b(Q_G+Q_B+Q_M) -c_G \tag{19}\]
+Deriverer så mhp \(Q_B\) og setter \(c_B\) = 10:
+
+\[\frac{\partial \pi}{\partial Q_B} = a - bQ_B - b(Q_G+Q_B+Q_M) -c_B \tag{20}\]
+
+Deriverer så mhp \(Q_M\) og setter \(c_M\) = 7:
+
+\[\frac{\partial \pi}{\partial Q_M} = a - bQ_M - b(Q_G+Q_B+Q_M) -c_M \tag{21}\]
+
+Løser så for optimalt kvantum for alle tre bryggerier \(Q_G^*\),
+\(Q_B^*\) og \(Q_M^*\) ved å sette
+\(\frac{\partial \pi}{\partial Q_G} = 0\),
+\(\frac{\partial \pi}{\partial Q_B} = 0\) og
+\(\frac{\partial \pi}{\partial Q_M} = 0\) i tusener:
+
+\[Q_G^* = \frac{a + c_b -3 c_g+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{22}\]
+\[Q_B^* = \frac{a + c_g -3 c_b+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{23}\]
+\[Q_M^* = \frac{a + c_b  +c_g-3c_m}{4b} = \frac{175 + 10 +10-3 \cdot 7 }{4 \cdot4} = 10.875 \tag{24}\]
+
+Dette forteller oss at det optimale kvantum for Graff Brygghus og
+Bryggeri 13 er 10.125 tusen flasker og for Mack Mikrobryggeri er det
+10.875 tusen flasker.
+
+Setter så inn \(Q_G^*\), \(Q_B^*\) og \(Q_M^*\) i etterspørselfunksjonen
+for å finne markedsprisen:
+
+\[P = a - b(Q_G^*+Q_B^*+Q_M^*) = 175 - 4 \cdot (10.125+10.125+10.875) = 175 - (4 \cdot 31.125)  = 175 - 124.5 = 50.5 \tag{25}\]
+Markedsprisen blir da 50.5 kr per flaske om de velger å ikke fusjonere.
+
+Setter så inn \(Q_G^*\), \(Q_B^*\) og \(Q_M^*\) i profittfunksjonen for
+Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri for å finne profitten
+for hvert bryggeri og trekker fra faste kostnader (her er kvantum ganget
+med 1000 slik at det blir direkte profitt):
+
+\[ \pi_G = \frac{125(a+c_b-3c_g+c_m)^2}{2b} -f_k = \frac{125(175+10-3 \cdot 10+7)^2}{2 \cdot 4} -300000 = 110062.5 \tag{26}\]
+
+\[ \pi_B = \frac{125(a-3c_b+c_g+c_m)^2}{2b} -f_k = \frac{125(175-3 \cdot 10+10+7)^2}{2 \cdot 4} -300000 = 110062.5 \tag{27}\]
+
+\[ \pi_m = \frac{125(a+c_b+c_g-3 \cdot c_m)^2}{2b} -f_k = \frac{125(175+10+10-3 \cdot 7)^2}{2 \cdot 4} -300000 = 173062.5 \tag{28}\]
+
+Dette forteller oss at profitten for Graff Brygghus og Bryggeri 13 blir
+110.062,5 kr og for Mack Mikrobryggeri som har lavere marginalkostnad
+blir profitten 173.062,5 kr.
+
 \subsection{a) Vil en slik fusjon være lønnsom for de fusjonerte
 partene?}\label{a-vil-en-slik-fusjon-vuxe6re-luxf8nnsom-for-de-fusjonerte-partene}
+
+Videre skal vi nå regne og se om en fusjon blir å være lønnsom for Mack
+Mikrobryggeri og Bryggeri 13.
 
 Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og
 Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under
@@ -739,6 +802,105 @@ $\displaystyle 363.333333333333$
 \end{Shaded}
 
 $\displaystyle 2890666.66666667$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Starter på oppgave 2, regner på nytt cournot for mikroøl}
+\CommentTok{\# q\_g er graffi, q\_b er bryggeri 13 og q\_m er mack mikrobryggeri}
+
+\CommentTok{\# regner cournot likevekt}
+\NormalTok{q\_g, q\_b, q\_m,c1,c2, a, b, f\_k}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}q\_g q\_b q\_m c1 c2 a b f\_k\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{a }\OperatorTok{=} \DecValTok{175}
+\NormalTok{b }\OperatorTok{=} \DecValTok{4}
+\NormalTok{c1 }\OperatorTok{=} \DecValTok{7}
+\NormalTok{c2 }\OperatorTok{=} \DecValTok{10}
+\NormalTok{f\_k }\OperatorTok{=} \DecValTok{300000}
+\KeywordTok{def}\NormalTok{ P\_demand(Q,a,b):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{Q}
+
+\KeywordTok{def}\NormalTok{ profit(q\_g,q\_b,q\_m,c,a,b):}
+    \ControlFlowTok{return}\NormalTok{ (P\_demand(q\_g}\OperatorTok{+}\NormalTok{q\_b}\OperatorTok{+}\NormalTok{q\_m,a,b)}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{q\_g}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_profit1\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_g,q\_b,q\_m,c2,a,b),q\_g)}
+\NormalTok{d\_profit2\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_b,q\_g, q\_m,c2,a,b),q\_b)}
+\NormalTok{d\_profit3\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_m,q\_g,q\_b,c1,a,b),q\_m)}
+
+
+\NormalTok{display(d\_profit1\_Q)}
+\NormalTok{display(d\_profit2\_Q)}
+\NormalTok{display(d\_profit3\_Q)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle - 4 q_{b} - 8 q_{g} - 4 q_{m} + 165$
+
+$\displaystyle - 8 q_{b} - 4 q_{g} - 4 q_{m} + 165$
+
+$\displaystyle - 4 q_{b} - 4 q_{g} - 8 q_{m} + 168$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sol}\OperatorTok{=}\NormalTok{sp.solve([d\_profit1\_Q,d\_profit2\_Q,d\_profit3\_Q],[q\_g,q\_b,q\_m])}
+
+\CommentTok{\# Kvantum til Graff brygghus}
+\NormalTok{display(sol[q\_g])}
+\CommentTok{\# Kvantum til Bryggeri 13}
+\NormalTok{display(sol[q\_b])}
+\CommentTok{\# Kvantum til Mack mikrobryggeri}
+\NormalTok{display(sol[q\_m])}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{81}{8}$
+
+$\displaystyle \frac{81}{8}$
+
+$\displaystyle \frac{87}{8}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ P\_demand(q\_g,q\_b,q\_m):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{(q\_g}\OperatorTok{+}\NormalTok{q\_b}\OperatorTok{+}\NormalTok{q\_m)}
+
+\CommentTok{\# Optimal pris i sluttmarkedet:}
+\NormalTok{P\_opt}\OperatorTok{=}\NormalTok{P\_demand(q\_g,q\_b,q\_m).subs(\{q\_g:sol[q\_g],q\_b:sol[q\_b],q\_m:sol[q\_m]\})}
+\NormalTok{P\_opt}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{101}{2}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Husk å gange med 1000 for å finne profitt siden tall er oppgitt i tusen}
+
+\CommentTok{\# profitt for (Graff brygghus):}
+\NormalTok{display(}\BuiltInTok{float}\NormalTok{((P\_opt}\OperatorTok{{-}}\NormalTok{c2)}\OperatorTok{*}\NormalTok{(sol[q\_g]}\OperatorTok{*}\DecValTok{1000}\NormalTok{)}\OperatorTok{{-}}\NormalTok{f\_k))}
+
+\CommentTok{\# profitt for Bryggeri 13:}
+\NormalTok{display(}\BuiltInTok{float}\NormalTok{((P\_opt}\OperatorTok{{-}}\NormalTok{c2)}\OperatorTok{*}\NormalTok{(sol[q\_b]}\OperatorTok{*}\DecValTok{1000}\NormalTok{)}\OperatorTok{{-}}\NormalTok{f\_k))}
+
+\CommentTok{\# profitt for Mack mikrobryggeri:}
+\NormalTok{display(}\BuiltInTok{float}\NormalTok{((P\_opt}\OperatorTok{{-}}\NormalTok{c1)}\OperatorTok{*}\NormalTok{(sol[q\_m]}\OperatorTok{*}\DecValTok{1000}\NormalTok{)}\OperatorTok{{-}}\NormalTok{f\_k))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+110062.5
+\end{verbatim}
+
+\begin{verbatim}
+110062.5
+\end{verbatim}
+
+\begin{verbatim}
+173062.5
+\end{verbatim}
 
 
 
