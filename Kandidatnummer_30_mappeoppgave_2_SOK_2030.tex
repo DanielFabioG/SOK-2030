@@ -164,8 +164,8 @@
 \usepackage{colortbl}
 \usepackage{xcolor}
 \renewcommand{\maketitle}{}
-\definecolor{cornflowerblue}{RGB}{100,149,237}
-\definecolor{darkgrey}{RGB}{220,220,220}
+\definecolor{winered}{RGB}{164,40,32}
+\definecolor{wesgrey}{RGB}{137,157,164}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -302,15 +302,25 @@ Konklusjon og så få chatgpt til å skrive sammendraget.
 \centering
 \begin{tabular}{|c|c|}
 \hline
+\rowcolor{winered}
 Variabel & Beskrivelse \\ \hline
+\rowcolor{wesgrey}
 $Q$ & Kvantum \\ \hline
+\rowcolor{wesgrey}
 $Q{_i^*}$ & Optimalt kvantum for gitt bedrift \\ \hline
+\rowcolor{wesgrey}
 $P$ & Pris  \\ \hline
+\rowcolor{wesgrey}
 $P^*$ & Optimal pris \\ \hline
+\rowcolor{wesgrey}
 $a$ & Maksimal betalingsvillighet \\ \hline
+\rowcolor{wesgrey}
 $b$ & Koeffisient for prisfølsomhet \\ \hline
+\rowcolor{wesgrey}
 $c_i$ & Marginale kostnader for gitt bedrift \\ \hline
+\rowcolor{wesgrey}
 $f_k$ & Faste kostnader for bedrifter \\ \hline
+\rowcolor{wesgrey}
 $\pi_i$ & Profittfunksjonen for gitt bedrift \\ \hline
 \end{tabular}
 \caption{Oppslagsverk av variabler}
@@ -469,7 +479,7 @@ velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir
 totalt kvantum produsert under cournot noe lavere på 37.600, og prisen
 per enhet noe dyrere på 363.33 kroner.
 
-Lederbedriften Olivia vil også tjene mer på sekvensielt valg under
+Lederbedriften Olivita vil også tjene mer på sekvensielt valg under
 stackelberg enn cournot, siden lederbedriften kan sette kvantum
 produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til
 at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer
@@ -494,11 +504,17 @@ bedriftene får lik andel av kaken med 18.800 kvantum produsert hver.
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
+\rowcolor{winered}
  & Stackelberg & Cournot \\ \hline
+ \rowcolor{wesgrey}
 $Q{_O^*}$ & 28200 & 18800 \\ \hline
+ \rowcolor{wesgrey}
 $Q{_C^*}$ & 14100 & 18800 \\ \hline
+ \rowcolor{wesgrey}
 $P^*$ & 285 & 363.33 \\ \hline
+ \rowcolor{wesgrey}
 $\pi_O$ & 3627000 & 2890666 \\ \hline
+ \rowcolor{wesgrey}
 $\pi_C$ & 313500 & 2890666 \\ \hline
 \end{tabular}
 \caption{Optimalt kvantum, pris og profitt}
@@ -510,15 +526,15 @@ sine valg før Dr Choice gjør sitt valg.
 
 I \autoref{table:stackel_cournot} kan vi se optimalt kvantum, salgspris
 og profitt ved stackelberg og cournot modell. Ved cournot deles
-profitten likt mellom bedriftene, mens ved stackelberg vil Olivia ha
+profitten likt mellom bedriftene, mens ved stackelberg vil Olivita ha
 større profitt og prisen blir lavere.
 
 \clearpage
 
 \section{Oppgave 2 (70\%)}\label{oppgave-2-70}
 
-\subsection{Markedet for mikroøl før
-fusjon}\label{markedet-for-mikrouxf8l-fuxf8r-fusjon}
+\subsection{Markedet for mikrobryggeri før
+fusjonering}\label{markedet-for-mikrobryggeri-fuxf8r-fusjonering}
 
 Markedet for produksjon av mikroøl består av tre lokale bryggerier:
 Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri.
@@ -600,23 +616,22 @@ Dette forteller oss at profitten for Graff Brygghus blir 110.062,5 kr og
 før fusjon vil Bryggeri 13 og Mack Mikrobryggeri få en summert profitt
 på 283.125 kr.
 
-\clearpage
+Vil en slik fusjon være lønnsom for de fusjonerte partene?
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\tightlist
-\item
-  Vil en slik fusjon være lønnsom for de fusjonerte partene?
-\end{enumerate}
+For å finne ut om en fusjon vil være lønnsom for de fusjonerte partene
+så regner vi på en cournot modell for assymetriske bedrifter etter
+fusjonering.
 
-\subsection{Markedet for mikroøl etter
-fusjon}\label{markedet-for-mikrouxf8l-etter-fusjon}
+\subsection{Markedet for mikrobryggeri etter
+fusjonering}\label{markedet-for-mikrobryggeri-etter-fusjonering}
 
 Videre skal vi nå regne og se om en fusjon blir å være lønnsom for Mack
 Mikrobryggeri og Bryggeri 13. Her brukes det fortsatt en cournot modell
 med assymetriske bedrifter.
 
 Etterspørselfunksjonen etter fusjon blir nå:
+
+\clearpage
 
 \[P = a - b(Q_G+Q_{bm})-c \tag{29}\]
 
@@ -659,16 +674,94 @@ er kvantum ganget med 1000 slik at det blir direkte profitt):
 Dette forteller oss at profitten etter fusjon for Graff Brygghus blir
 429.000 kr og for de fusjonerte bedriftene blir profitten på 312.250 kr.
 
-Fusjonsparadokset slår til her og det er Graff Brygghus som tjener mest
-med en økning fra 110.062,5 kr til 429.000 kr i profitt. Før fusjonen
-hadde Bryggeri 13 og Mack Mikrobryggeri en profitt på 283.125 kr og
-etter fusjonen øker den til 312.250 kr. Fusjonen vil være lønnsom for de
-fusjonerte partene, dog ikke like mye som for Graff Brygghus.
+\subsection{Fusjonsparadokset}\label{fusjonsparadokset}
 
-Samfunnsøkonomisk blir kvantumet etter fusjonen å gå ned fra 31.125 til
-27.75 tusen flasker og prisen per flaske øker fra 50.5 til 64 kr. Dette
-vil føre til at det blir produsert mindre mikroøl i markedet og prisen
-per flaske vil øke.
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/cournot_mikrobryggerier.png}
+  \captionof{figure}{Cournot modell før fusjon}
+  \label{fig:cournot_før_fusjon}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/fusjonert_bedrift.png}
+  \captionof{figure}{Cournot modell etter fusjon}
+  \label{fig:cournot_etter_fusjon}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/stackelberg_mack_graff.png}
+  \captionof{figure}{Stackelberg modell etter fusjon}
+  \label{fig:stackelberg_etter_fusjon}
+  \vspace{-1cm}
+\end{wrapfigure}
+
+Fusjonsparadokset er enkelt forklart ved at etterspørselen etter
+mikrobryggeriøl ikke endrer seg etter fusjonen og Graff som tidligere
+delte markedet med to andre bryggerier, vil nå kun dele markedet med ett
+bryggeri. Dette vil føre til at Graff Brygghus øker produksjonen med
+\(13.15 - 10.125 =  3.025\) tusen flasker i kvantum og markedsprisen per
+flaske øker fra 50.5 til 64 kr.
+
+Fusjonsparadokset slår til her på profitten og det er Graff Brygghus som
+tjener mest med en økning fra 110.062,5 kr før fusjon til 429.000 kr i
+profitt. Før fusjonen hadde Bryggeri 13 og Mack Mikrobryggeri en samlet
+profitt på 283.125 kr og etter fusjonen øker den til 312.250 kr opp med
+29125 kr. Fusjonen vil være lønnsom for de fusjonerte partene på grunn
+av at de kan flytte produksjonen til Mack hvor marginalkostnaden går
+ned, dog ikke nært like mye som for Graff Brygghus.
+
+Samfunnsøkonomisk blir kvantumet etter fusjonen ved cournot å gå ned fra
+31.125 til 27.75 tusen flasker og prisen per flaske øker fra 50.5 til 64
+kr. Dette vil føre til at det blir produsert mindre mikrobryggeriøl i
+markedet og prisen per flaske vil øke. Og i
+\autoref{fig:cournot_før_fusjon} og \autoref{fig:cournot_etter_fusjon}
+kan vi se at Graff Brygghus øker sin produksjon etter fusjonen, mens
+Bryggeri 13 og Mack Mikrobryggeri sin totale produksjon går ned, dog de
+har større markedsandel.
+
+\subsection{Fusjonsparadokset ved
+stackelberg}\label{fusjonsparadokset-ved-stackelberg}
+
+Siden fusjonen vil føre til at Graff Brygghus får størst profitt, så vil
+det være en fordel for den nye fusjonerte bedriften å sette kvantum
+først i markedet som lederbedrift ettersom de har en større
+produksjonskapasitet.
+
+Utregningen ved at Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir
+en lederbedrift ligger i appendix i kode men oppsummeres i
+\autoref{table:fusjon}. Og ved at Graff Brygghus er følgerbedrift så vil
+profitten til Graff Brygghus gå ned til 95.015 kroner mens profitten til
+den fusjonerte bedriften vil øke til 413.781 kroner, som vil gjøre det
+veldig lønnsomt for de fusjonerte partene å fusjonere dersom de har
+mulighet å bli lederbedrift og bestemme kvantum i markedet som vises i
+\autoref{fig:stackelberg_etter_fusjon}.
+
+\clearpage
+
+I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra
+hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift
+da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet
+og prisen per flaske blir lavest.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{winered}
+ & Cournot før fusjon & Cournot etter fusjon & Stackelberg etter fusjon \\ \hline
+ \rowcolor{wesgrey}
+$Q_G^*$ & 10.125 & 13.5 & 10 \\ \hline
+ \rowcolor{wesgrey}
+$Q_B^*$ & 10.125 & 0 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$Q_M^*$ & 10.875 & 14.25 & 21 \\ \hline
+ \rowcolor{wesgrey}
+$P^*$ & 50.5 & 64 & 50 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_G$ & 110062.5 & 429000 & 95015 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_B$ & 110062.5 & 0 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_M$ & 173062.5 & 312250 & 413781 \\ \hline
+\end{tabular}
+\caption{Optimalt kvantum, pris og profitt før og etter fusjon}
+\label{table:fusjon}
+\end{table}
 
 Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og
 Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under
@@ -703,12 +796,16 @@ eventuell fusjon i oppstrømsmarkedet.
 
 \clearpage
 
+Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å
+gjennomføre fusjon med Graff Brygghus?
+
+\subsection{Cournot modell for Graff Brygghus og Mack Mikrobrygg
+13}\label{cournot-modell-for-graff-brygghus-og-mack-mikrobrygg-13}
+
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
-\setcounter{enumi}{1}
-\item
-  Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å
-  gjennomføre fusjon med Graff Brygghus?
+\setcounter{enumi}{2}
+\tightlist
 \item
   Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack
   Mikrobrygg 13 og Graff Brygghus.
@@ -862,7 +959,7 @@ $\displaystyle 313500.0$
 \CommentTok{\# Lager første pai som viser hvor stort kvantum av markedet hver bedrift har ved bruk av stackelbergmodellen}
 \NormalTok{labels }\OperatorTok{=} \StringTok{\textquotesingle{}Olivita\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Dr Choice\textquotesingle{}}
 \NormalTok{sizes }\OperatorTok{=}\NormalTok{ [Q1\_sol,Q2\_sol2]}
-\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#DD8D29\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#E2D200\textquotesingle{}}\NormalTok{]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{]}
 \NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
 \NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
 \NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/stackelberg\_olivita\_dr\_choice.png\textquotesingle{}}\NormalTok{, bbox\_inches}\OperatorTok{=}\StringTok{\textquotesingle{}tight\textquotesingle{}}\NormalTok{, dpi}\OperatorTok{=}\DecValTok{600}\NormalTok{)}
@@ -1073,6 +1170,20 @@ $\displaystyle 283125$
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\CommentTok{\# Oppgave 2 figur for mikrobryggeriene}
+\NormalTok{labels }\OperatorTok{=} \StringTok{\textquotesingle{}Graff Brygghus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Bryggeri 13\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Mack Mikrobryggeri\textquotesingle{}}
+\NormalTok{sizes }\OperatorTok{=}\NormalTok{ [sol[q\_g],sol[q\_b],sol[q\_m]]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#9B110E\textquotesingle{}}\NormalTok{]}
+\NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
+\NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
+\NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/cournot\_mikrobryggerier.png\textquotesingle{}}\NormalTok{, bbox\_inches}\OperatorTok{=}\StringTok{\textquotesingle{}tight\textquotesingle{}}\NormalTok{, dpi}\OperatorTok{=}\DecValTok{600}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-25-output-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \CommentTok{\# Fusjonerer to asymmetriske cournot bedrifter Mack mikrobryggeri og Bryggeri 13}
 
 \CommentTok{\# Oppgave 2a}
@@ -1161,6 +1272,141 @@ $\displaystyle 64$
 $\displaystyle 429000$
 
 $\displaystyle 312250$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Figur for markedet etter fusjon}
+
+\NormalTok{labels }\OperatorTok{=} \StringTok{\textquotesingle{}Graff Brygghus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Fusjonert bedrift\textquotesingle{}}
+\NormalTok{sizes }\OperatorTok{=}\NormalTok{ [sol[q\_g],sol[q\_bm]]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{]}
+\NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
+\NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
+\NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/fusjonert\_bedrift.png\textquotesingle{}}\NormalTok{,bbox\_inches}\OperatorTok{=}\StringTok{\textquotesingle{}tight\textquotesingle{}}\NormalTok{, dpi}\OperatorTok{=}\DecValTok{600}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-31-output-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{q1, q2,c, a, b, pi,i}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}q1 q2 c a b pi i\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{a }\OperatorTok{=} \DecValTok{175}
+\NormalTok{b }\OperatorTok{=} \DecValTok{4}
+\NormalTok{c }\OperatorTok{=} \DecValTok{10}
+
+
+\KeywordTok{def}\NormalTok{ P\_demand(Q,a,b):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{Q}
+
+\KeywordTok{def}\NormalTok{ profit(q1,q2,c,a,b):}
+    \ControlFlowTok{return}\NormalTok{ (P\_demand(q1}\OperatorTok{+}\NormalTok{q2,a,b)}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{q1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_profit2\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q2,q1,c,a,b),q2)}
+\NormalTok{d\_profit2\_Q}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle - 4 q_{1} - 8 q_{2} + 165$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Graff brygghus}
+\NormalTok{Q2\_sol1}\OperatorTok{=}\NormalTok{sp.solve(d\_profit2\_Q,q2)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Q2\_sol1}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{165}{8} - \frac{q_{1}}{2}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_profit1\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q1,Q2\_sol1,}\DecValTok{7}\NormalTok{,a,b),q1)}
+\NormalTok{d\_profit1\_Q}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{171}{2} - 4 q_{1}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Setter den deriverte lik 0 og finner reaksjonsfunksjon til Graff}
+\NormalTok{Q1\_sol}\OperatorTok{=}\NormalTok{sp.solve(d\_profit1\_Q,q1)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Q1\_sol}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{171}{8}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Q2\_sol2}\OperatorTok{=}\NormalTok{Q2\_sol1.subs(\{q1:Q1\_sol\})}
+\NormalTok{Q2\_sol2}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{159}{16}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ P\_demand(q1,q2):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{(q1}\OperatorTok{+}\NormalTok{q2)}
+
+\CommentTok{\# Optimal kvantum i sluttmarkedet:}
+\NormalTok{P\_opt}\OperatorTok{=}\NormalTok{P\_demand(q1,q2).subs(\{q1:Q1\_sol,q2:Q2\_sol2\})}
+\NormalTok{sp.simplify(P\_opt)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{199}{4}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{c\_m }\OperatorTok{=} \DecValTok{7}
+\CommentTok{\# profitt for lederbedrift:}
+\KeywordTok{def}\NormalTok{ profitt(q1):}
+    \ControlFlowTok{return}\NormalTok{ (P\_opt}\OperatorTok{{-}}\NormalTok{c\_m)}\OperatorTok{*}\NormalTok{Q1\_sol}\OperatorTok{{-}}\DecValTok{500}
+
+\NormalTok{mack\_profitt }\OperatorTok{=}\NormalTok{ sp.simplify(profitt(q1))}
+
+\NormalTok{profitt\_mack\_stackel}\OperatorTok{=}\BuiltInTok{round}\NormalTok{(mack\_profitt,}\DecValTok{2}\NormalTok{)}
+\NormalTok{profitt\_mack\_stackel}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 413.78$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for følgerbedrift:}
+\KeywordTok{def}\NormalTok{ profitt(q2):}
+    \ControlFlowTok{return}\NormalTok{ (P\_opt}\OperatorTok{{-}}\DecValTok{10}\NormalTok{)}\OperatorTok{*}\NormalTok{Q2\_sol2}\OperatorTok{{-}}\DecValTok{300}
+
+\NormalTok{svar\_2 }\OperatorTok{=}\NormalTok{ sp.simplify(profitt(q2))}
+\BuiltInTok{round}\NormalTok{(svar\_2,}\DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 95.02$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Lager pai som viser hvor stor andel av markedet hver bedrift har ved bruk av stackelbergmodellen etter fusjonering}
+\NormalTok{labels }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}Mack Mikrobrygg 13\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Graff Brygghus\textquotesingle{}}\NormalTok{]}
+\NormalTok{sizes }\OperatorTok{=}\NormalTok{ [Q1\_sol,Q2\_sol2]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{]}
+\NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
+\NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
+\NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/stackelberg\_mack\_graff.png\textquotesingle{}}\NormalTok{,bbox\_inches}\OperatorTok{=}\StringTok{\textquotesingle{}tight\textquotesingle{}}\NormalTok{, dpi}\OperatorTok{=}\DecValTok{600}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-41-output-1.pdf}
 
 
 

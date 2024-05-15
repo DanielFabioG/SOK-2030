@@ -32,8 +32,8 @@ header-includes:
   - \usepackage{colortbl}
   - \usepackage{xcolor}
   - \renewcommand{\maketitle}{}
-  - \definecolor{cornflowerblue}{RGB}{100,149,237}
-  - \definecolor{darkgrey}{RGB}{220,220,220}
+  - \definecolor{winered}{RGB}{164,40,32}
+  - \definecolor{wesgrey}{RGB}{137,157,164}
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
   - \fancyhf{} 
@@ -90,15 +90,25 @@ Konklusjon og så få chatgpt til å skrive sammendraget.
 \centering
 \begin{tabular}{|c|c|}
 \hline
+\rowcolor{winered}
 Variabel & Beskrivelse \\ \hline
+\rowcolor{wesgrey}
 $Q$ & Kvantum \\ \hline
+\rowcolor{wesgrey}
 $Q{_i^*}$ & Optimalt kvantum for gitt bedrift \\ \hline
+\rowcolor{wesgrey}
 $P$ & Pris  \\ \hline
+\rowcolor{wesgrey}
 $P^*$ & Optimal pris \\ \hline
+\rowcolor{wesgrey}
 $a$ & Maksimal betalingsvillighet \\ \hline
+\rowcolor{wesgrey}
 $b$ & Koeffisient for prisfølsomhet \\ \hline
+\rowcolor{wesgrey}
 $c_i$ & Marginale kostnader for gitt bedrift \\ \hline
+\rowcolor{wesgrey}
 $f_k$ & Faste kostnader for bedrifter \\ \hline
+\rowcolor{wesgrey}
 $\pi_i$ & Profittfunksjonen for gitt bedrift \\ \hline
 \end{tabular}
 \caption{Oppslagsverk av variabler}
@@ -205,7 +215,7 @@ $$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666
 
 Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg hvis man ser på \autoref{table:stackel_cournot} og prisen blir lavere per enhet. Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner. 
 
-Lederbedriften Olivia vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. 
+Lederbedriften Olivita vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. 
 
 Totalt vil lederbedriften tjene 3.627.000 kroner under stackelberg og $(P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666$  kroner under cournot. Derfor vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
 
@@ -218,11 +228,17 @@ I \autoref{fig:cournot_olivita_dr_choice} kan vi se hvor stor andel av kvantum p
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
+\rowcolor{winered}
  & Stackelberg & Cournot \\ \hline
+ \rowcolor{wesgrey}
 $Q{_O^*}$ & 28200 & 18800 \\ \hline
+ \rowcolor{wesgrey}
 $Q{_C^*}$ & 14100 & 18800 \\ \hline
+ \rowcolor{wesgrey}
 $P^*$ & 285 & 363.33 \\ \hline
+ \rowcolor{wesgrey}
 $\pi_O$ & 3627000 & 2890666 \\ \hline
+ \rowcolor{wesgrey}
 $\pi_C$ & 313500 & 2890666 \\ \hline
 \end{tabular}
 \caption{Optimalt kvantum, pris og profitt}
@@ -232,13 +248,13 @@ $\pi_C$ & 313500 & 2890666 \\ \hline
 
 Svaret blir da at det er en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
 
-I \autoref{table:stackel_cournot} kan vi se optimalt kvantum, salgspris og profitt ved stackelberg og cournot modell. Ved cournot deles profitten likt mellom bedriftene, mens ved stackelberg vil Olivia ha større profitt og prisen blir lavere.
+I \autoref{table:stackel_cournot} kan vi se optimalt kvantum, salgspris og profitt ved stackelberg og cournot modell. Ved cournot deles profitten likt mellom bedriftene, mens ved stackelberg vil Olivita ha større profitt og prisen blir lavere.
 
 \clearpage
 
 # Oppgave 2 (70%)
 
-## Markedet for mikroøl før fusjon
+## Markedet for mikrobryggeri før fusjonering
 
 Markedet for produksjon av mikroøl består av tre lokale bryggerier: Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri.
 
@@ -291,15 +307,18 @@ $$ \pi_m = \frac{125(a+c_b+c_g-3 \cdot c_m)^2}{2b} -f_k = \frac{125(175+10+10-3 
 
 Dette forteller oss at profitten for Graff Brygghus blir 110.062,5 kr og før fusjon vil Bryggeri 13 og Mack Mikrobryggeri få en summert profitt på 283.125 kr.
 
-\clearpage
+Vil en slik fusjon være lønnsom for de fusjonerte partene?
 
-a) Vil en slik fusjon være lønnsom for de fusjonerte partene?
+For å finne ut om en fusjon vil være lønnsom for de fusjonerte partene så regner vi på en cournot modell for assymetriske bedrifter etter fusjonering.
 
-## Markedet for mikroøl etter fusjon
+
+## Markedet for mikrobryggeri etter fusjonering
 
 Videre skal vi nå regne og se om en fusjon blir å være lønnsom for Mack Mikrobryggeri og Bryggeri 13. Her brukes det fortsatt en cournot modell med assymetriske bedrifter.
 
 Etterspørselfunksjonen etter fusjon blir nå:
+
+\clearpage
 
 $$P = a - b(Q_G+Q_{bm})-c \tag{29}$$
 
@@ -335,9 +354,66 @@ $$ \pi_{bm} = \frac{1000(a-2c_{bm}+c_g)^2}{9b} -f_{kbm} = \frac{1000(175-2 \cdot
 
 Dette forteller oss at profitten etter fusjon for Graff Brygghus blir 429.000 kr og for de fusjonerte bedriftene blir profitten på 312.250 kr.
 
-Fusjonsparadokset slår til her og det er Graff Brygghus som tjener mest med en økning fra 110.062,5 kr til 429.000 kr i profitt. Før fusjonen hadde Bryggeri 13 og Mack Mikrobryggeri en profitt på 283.125 kr og etter fusjonen øker den til 312.250 kr. Fusjonen vil være lønnsom for de fusjonerte partene, dog ikke like mye som for Graff Brygghus.
+## Fusjonsparadokset
 
-Samfunnsøkonomisk blir kvantumet etter fusjonen å gå ned fra 31.125 til 27.75 tusen flasker og prisen per flaske øker fra 50.5 til 64 kr. Dette vil føre til at det blir produsert mindre mikroøl i markedet og prisen per flaske vil øke.
+```{=tex}
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/cournot_mikrobryggerier.png}
+  \captionof{figure}{Cournot modell før fusjon}
+  \label{fig:cournot_før_fusjon}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/fusjonert_bedrift.png}
+  \captionof{figure}{Cournot modell etter fusjon}
+  \label{fig:cournot_etter_fusjon}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/stackelberg_mack_graff.png}
+  \captionof{figure}{Stackelberg modell etter fusjon}
+  \label{fig:stackelberg_etter_fusjon}
+  \vspace{-1cm}
+\end{wrapfigure}
+```
+
+Fusjonsparadokset er enkelt forklart ved at etterspørselen etter mikrobryggeriøl ikke endrer seg etter fusjonen og Graff som tidligere delte markedet med to andre bryggerier, vil nå kun dele markedet med ett bryggeri. Dette vil føre til at Graff Brygghus øker produksjonen med $13.15 - 10.125 =  3.025$ tusen flasker i kvantum og markedsprisen per flaske øker fra 50.5 til 64 kr.
+
+Fusjonsparadokset slår til her på profitten og det er Graff Brygghus som tjener mest med en økning fra 110.062,5 kr før fusjon til 429.000 kr i profitt. Før fusjonen hadde Bryggeri 13 og Mack Mikrobryggeri en samlet profitt på 283.125 kr og etter fusjonen øker den til 312.250 kr opp med 29125 kr. Fusjonen vil være lønnsom for de fusjonerte partene på grunn av at de kan flytte produksjonen til Mack hvor marginalkostnaden går ned, dog ikke nært like mye som for Graff Brygghus.
+
+Samfunnsøkonomisk blir kvantumet etter fusjonen ved cournot å gå ned fra 31.125 til 27.75 tusen flasker og prisen per flaske øker fra 50.5 til 64 kr. Dette vil føre til at det blir produsert mindre mikrobryggeriøl i markedet og prisen per flaske vil øke. Og i \autoref{fig:cournot_før_fusjon} og \autoref{fig:cournot_etter_fusjon} kan vi se at Graff Brygghus øker sin produksjon etter fusjonen, mens Bryggeri 13 og Mack Mikrobryggeri sin totale produksjon går ned, dog de har større markedsandel.
+
+## Fusjonsparadokset ved stackelberg
+
+Siden fusjonen vil føre til at Graff Brygghus får størst profitt, så vil det være en fordel for den nye fusjonerte bedriften å sette kvantum først i markedet som lederbedrift ettersom de har en større produksjonskapasitet.
+
+Utregningen ved at Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir en lederbedrift ligger i appendix i kode men oppsummeres i \autoref{table:fusjon}. Og ved at Graff Brygghus er følgerbedrift så vil profitten til Graff Brygghus gå ned til 95.015 kroner mens profitten til den fusjonerte bedriften vil øke til 413.781 kroner, som vil gjøre det veldig lønnsomt for de fusjonerte partene å fusjonere dersom de har mulighet å bli lederbedrift og bestemme kvantum i markedet som vises i \autoref{fig:stackelberg_etter_fusjon}.
+
+\clearpage
+
+I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest.
+
+```{=tex}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{winered}
+ & Cournot før fusjon & Cournot etter fusjon & Stackelberg etter fusjon \\ \hline
+ \rowcolor{wesgrey}
+$Q_G^*$ & 10.125 & 13.5 & 10 \\ \hline
+ \rowcolor{wesgrey}
+$Q_B^*$ & 10.125 & 0 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$Q_M^*$ & 10.875 & 14.25 & 21 \\ \hline
+ \rowcolor{wesgrey}
+$P^*$ & 50.5 & 64 & 50 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_G$ & 110062.5 & 429000 & 95015 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_B$ & 110062.5 & 0 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_M$ & 173062.5 & 312250 & 413781 \\ \hline
+\end{tabular}
+\caption{Optimalt kvantum, pris og profitt før og etter fusjon}
+\label{table:fusjon}
+\end{table}
+```
 
 Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under navnet Mack Mikrobrygg 13. Markedet for produksjon av mikroøl vi da bestå av to lokale produsenter: Mack Mikrobrygg 13 og Graff Brygghus. For å styrke sin posisjon i markedet, investerer Graff Brygghus i nytt og mer effektivt produksjonsutstyr, noe som reduserer deres variable kostnader til kr 7 per flaske. Denne investeringen vil gi selskapet økte faste kostnader på kr 200.000. Totale faste kostnader for begge bryggeriene er da på kr 500.000 for hvert av selskapene.
 
@@ -351,7 +427,9 @@ Som konsulent for styret i Mack Mikrobrygg 13, er du bedt om å analysere marked
 
 \clearpage
 
-b) Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjon med Graff Brygghus?
+Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjon med Graff Brygghus?
+
+## Cournot modell for Graff Brygghus og Mack Mikrobrygg 13
 
 c) Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus.
 
@@ -457,7 +535,7 @@ sp.simplify((P_opt-c)*Q2_sol2-f_k)
 # Lager første pai som viser hvor stort kvantum av markedet hver bedrift har ved bruk av stackelbergmodellen
 labels = 'Olivita', 'Dr Choice'
 sizes = [Q1_sol,Q2_sol2]
-colors = ['#DD8D29', '#E2D200']
+colors = ['#A42820', '#5F5647']
 explode = (0.1, 0)  # explode 1st slice
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
 plt.savefig('dokumentobjekter/figurer/stackelberg_olivita_dr_choice.png', bbox_inches='tight', dpi=600)
@@ -602,6 +680,17 @@ display(Mack)
 Mack+Bryggeri_13
 ```
 
+```{python}  
+# Oppgave 2 figur for mikrobryggeriene
+labels = 'Graff Brygghus', 'Bryggeri 13', 'Mack Mikrobryggeri'
+sizes = [sol[q_g],sol[q_b],sol[q_m]]
+colors = ['#A42820', '#5F5647', '#9B110E']
+explode = (0.1, 0, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/cournot_mikrobryggerier.png', bbox_inches='tight', dpi=600)
+```
+
+
 ```{python}
 # Fusjonerer to asymmetriske cournot bedrifter Mack mikrobryggeri og Bryggeri 13
 
@@ -671,4 +760,100 @@ display(sp.simplify((P_opt-c_bm)*(sol[q_bm]*1000)-f_k_bm))
 
 ```
 
+```{python}
+# Figur for markedet etter fusjon
+
+labels = 'Graff Brygghus', 'Fusjonert bedrift'
+sizes = [sol[q_g],sol[q_bm]]
+colors = ['#A42820', '#5F5647']
+explode = (0.1, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/fusjonert_bedrift.png',bbox_inches='tight', dpi=600)
+```
+
+```{python}  
+q1, q2,c, a, b, pi,i=sp.symbols('q1 q2 c a b pi i')
+
+a = 175
+b = 4
+c = 10
+
+
+def P_demand(Q,a,b):
+    return a-b*Q
+
+def profit(q1,q2,c,a,b):
+    return (P_demand(q1+q2,a,b)-c)*q1
+```
+
+```{python}
+d_profit2_Q=sp.diff(profit(q2,q1,c,a,b),q2)
+d_profit2_Q
+```
+
+```{python}
+# Graff brygghus
+Q2_sol1=sp.solve(d_profit2_Q,q2)[0]
+Q2_sol1
+```
+
+```{python}
+d_profit1_Q=sp.diff(profit(q1,Q2_sol1,7,a,b),q1)
+d_profit1_Q
+```
+
+
+```{python}
+
+# Setter den deriverte lik 0 og finner reaksjonsfunksjon til Graff
+Q1_sol=sp.solve(d_profit1_Q,q1)[0]
+Q1_sol
+```
+
+```{python}
+Q2_sol2=Q2_sol1.subs({q1:Q1_sol})
+Q2_sol2
+```
+
+```{python}
+def P_demand(q1,q2):
+    return a-b*(q1+q2)
+
+# Optimal kvantum i sluttmarkedet:
+P_opt=P_demand(q1,q2).subs({q1:Q1_sol,q2:Q2_sol2})
+sp.simplify(P_opt)
+```
+
+```{python}
+c_m = 7
+# profitt for lederbedrift:
+def profitt(q1):
+    return (P_opt-c_m)*Q1_sol-500
+
+mack_profitt = sp.simplify(profitt(q1))
+
+profitt_mack_stackel=round(mack_profitt,2)
+profitt_mack_stackel
+```
+
+```{python}
+# profitt for følgerbedrift:
+def profitt(q2):
+    return (P_opt-10)*Q2_sol2-300
+
+svar_2 = sp.simplify(profitt(q2))
+round(svar_2,2)
+```
+
+
+
+```{python}
+# Lager pai som viser hvor stor andel av markedet hver bedrift har ved bruk av stackelbergmodellen etter fusjonering
+labels = ['Mack Mikrobrygg 13', 'Graff Brygghus']
+sizes = [Q1_sol,Q2_sol2]
+colors = ['#A42820', '#5F5647']
+explode = (0.1, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/stackelberg_mack_graff.png',bbox_inches='tight', dpi=600)
+```
 
