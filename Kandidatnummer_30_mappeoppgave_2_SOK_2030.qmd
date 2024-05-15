@@ -40,6 +40,7 @@ header-includes:
   - \fancyhead[L]{\rightmark}
   - \fancyhead[R]{\thepage}
   - \fancyfoot[C]{\thepage}
+  
 nocite: |
   @*
 keep-tex: true
@@ -53,15 +54,20 @@ keep-tex: true
     \textbf{Sammendrag}
 \end{center}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem mauris. Nunc ac metus quis ante vehicula iaculis sollicitudin a est. Sed ut sapien congue, imperdiet erat feugiat, laoreet urna. Donec non lorem ac lacus sagittis egestas. Aliquam mollis, metus id pharetra malesuada, elit orci tempor justo, id volutpat arcu enim efficitur velit. Sed elit urna, tincidunt id nunc eget, egestas maximus ante. Ut a odio porta, condimentum nulla et, ornare eros.
+Del opp og strukturer oppgaven bedre.
 
-Mauris risus ex, pellentesque eu faucibus sed, ultricies eleifend risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam et enim eros. Ut at arcu lectus. Nullam aliquam placerat sapien, vitae elementum diam maximus ac. Donec luctus ultrices mollis. Vivamus malesuada in lectus condimentum auctor. Nullam pharetra arcu at mauris eleifend auctor. Donec volutpat sem at purus tempus faucibus.
+Forklar bedre og bruk pensum mer på begrunnelse av modeller. 
 
-Fusce a vehicula lectus. Sed fringilla aliquet libero. Nam varius congue mauris, ac pulvinar lectus pretium vel. Cras malesuada auctor magna sit amet convallis. Nulla id sem ipsum. Nullam ultrices gravida molestie. Curabitur auctor, tortor nec congue laoreet, lectus tellus ornare eros, et venenatis nibh tellus non sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pulvinar risus nisi, vel rhoncus magna suscipit ac. Proin odio massa, pretium at ipsum vel, mollis efficitur erat. Pellentesque sed leo massa. Mauris vitae turpis laoreet, pretium nulla eget, sodales urna. Mauris nisi arcu, mollis eu pretium vel, dictum in tellus. Sed quis ante a neque convallis finibus.
+Lag paier for å illustrere bedre.
 
-Donec et sem sodales, consectetur ex non, hendrerit sapien. Pellentesque mi magna, auctor nec purus vel, mattis dictum orci. Pellentesque nisl felis, gravida a ex eget, interdum iaculis diam. Etiam feugiat bibendum est ut viverra. Vestibulum aliquam sapien et elit rutrum, ac ultricies quam vehicula. Etiam sagittis pretium nisi, vitae eleifend orci auctor a. Donec nec urna sed dui porttitor porta. Nam molestie neque id nibh elementum auctor. In hac habitasse platea dictumst. Nulla tincidunt gravida tortor, ut finibus nisl ornare efficitur. Proin porta bibendum dapibus.
+Lag en tabell som viser hva og hvilke variabler som er definert i oppgaven.
 
-Nulla consequat lacus dolor. Fusce nibh nunc, condimentum non sem eget, feugiat viverra urna. Nam eros metus, dignissim eget odio id, facilisis varius enim. Donec a interdum eros. Nam vulputate in magna vel rutrum. Nam nec vestibulum eros. Sed placerat facilisis ligula, nec convallis purus aliquam non. Sed fringilla lacinia fermentum. Pellentesque auctor convallis nisi lacinia tincidunt. Nulla a consequat quam. Nulla eu consequat magna, vitae hendrerit dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Lag en tabell som viser profitt med stackelberg og cournot modell i oppgave 1.
+
+Avslutningsvis lag to tabeller som viser profitter til bedriftene før og etter fusjon i oppgave 2 med de forskjellige modellene.
+
+Konklusjon og så få chatgpt til å skrive sammendraget.
+
 
 \newpage
 \hypersetup{linkcolor=black}
@@ -76,17 +82,45 @@ Nulla consequat lacus dolor. Fusce nibh nunc, condimentum non sem eget, feugiat 
 \newpage
 ```
 
+# Oppslagsverk av variabler
+
+```{=tex}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variabel & Beskrivelse \\ \hline
+$Q$ & Kvantum \\ \hline
+$Q{_i^*}$ & Optimalt kvantum for gitt bedrift \\ \hline
+$P$ & Pris  \\ \hline
+$P^*$ & Optimal pris \\ \hline
+$a$ & Maksimal betalingsvillighet \\ \hline
+$b$ & Koeffisient for prisfølsomhet \\ \hline
+$c_i$ & Marginale kostnader for gitt bedrift \\ \hline
+$f_k$ & Faste kostnader for bedrifter \\ \hline
+$\pi_i$ & Profittfunksjonen for gitt bedrift \\ \hline
+\end{tabular}
+\caption{Oppslagsverk av variabler}
+\label{tab:variabler}
+\end{table}
+```
+
+Merk: det er mulighet for notasjonsfeil i \autoref{tab:variabler} mot hva som er skrevet videre i oppgaven.
+
 # Oppgave 1 (30%)
 
-Olivita AS ble etablert i 2002 av to professorer fra Universitetet i Tromsø (UiT). Selskapet tilbyr kosttilskuddet Olivita, som inneholder omega-3 og er utviklet for å støtte hjerte, ledd og immunforsvar. Produktet har vært patentbeskyttet frem til 2023, og Olivita har hatt eksklusiv rett til produksjon av dette omega-3 produktet. Etter patentens utløp har det nye selskapet Dr Choice AS kommet på markedet og tilbyr Easy Choice Omega-3. I markedet for omega-3 produkter vil Olivita AS fortsette å være en ledende aktør, mens Dr Choice AS vil utfordre som en nykommer.
+Hva blir optimal tilpasning i dette markedet når Olivita kan gjøre sine strategiske valg før konkurrenten, Dr Choice AS, gjør sitt valg?
 
-I dette marked er det følgende invers etterspørsel: $P = 990−\frac{1}{60}(Q_O+Q_C)$ hvor $Q_O$ er antall solgte flasker med Olivita, $Q_C$ er antall solgte flasker Easy Choice Omega-3 og P er pris per flaske av Omega-3 produktene. I produksjon av Omega-3 produktene vil begge bedriftene ha konstante marginalkostnader på kr 50 per produsert flaske. Faste kostnader for begge bedriftene er på 3 millioner kroner.
+## Valg av modell
 
-a)  Hva blir optimal tilpasning i dette markedet når Olivita kan gjøre sine strategiske valg før konkurrenten, Dr Choice AS, gjør sitt valg?
+Godene vi ser på er substitutter (de er like) hvor Olivita har vært lengst i markedet og dermed er lederbedriften. Derfor blir stackelberg-modellen brukt, hvis den ene bedriften (lederbedriften) øker sin produksjon vil den andre bedriften sin produksjon minke, noe som gjør det til kvantumkonkurranse. 
 
-## Optimal tilpasning
+Stackelberg-modellen er en sekvensiell modell hvor kvantum er bedriftenes handlingsvariabler i motsetning til bertrand hvor bedriftene konkurrerer om pris. Lederbedriften Olivita, tar sine beslutninger først og bestemmer hvor mye som produseres som maksimerer deres egen profitt basert på at følgerbedriften Dr Choice vil tilpasse seg sekvensielt med sitt eget kvantum som en reaksjon på Olivita sitt valg av kvantum.
 
-Ved å bruke en stackelberg modell kan vi finne optimal tilpasning i markedet. Godene vi ser på er substitutter så det er derfor denne modellen blir brukt, siden hvis den ene bedriften øker sin produksjon vil den andre bedriften sin produksjon minke, derfor er det en kvantumskonkurranse. Stackelberg-modellen er en sekvensiell modell hvor kvantum er bedriftenes handlingsvariabler. Lederbedriften (Olivita AS) tar sine beslutninger først og bestemmer hvor mye som produseres som maksimerer deres egen profitt basert på at Dr Choice AS vil tilpasse seg deres volum med sitt kvantum som følgerbedrift.
+## Optimal tilpasning ved stackelberg
+
+Ved å bruke en stackelberg modell kan vi finne optimal tilpasning i markedet. 
 
 Den inverse etterspørselen i markedet er gitt ved $P = a−b(Q_O+Q_C)$ hvor $Q_O$ er antall solgte flasker med Olivita, $Q_C$ er antall solgte flasker Easy Choice Omega-3 og $P$ er pris per flaske av Omega-3 produktene. I produksjon av Omega-3 produktene vil begge bedriftene ha konstante marginalkostnader $c$ på kr 50 per produsert flaske. Faste kostnader $f_k$ for begge bedriftene er på 3 millioner kroner. $a = 990$ og $b = \frac{1}{60}$ og da blir den inverse etterspørselen $P = 990−\frac{1}{60}(Q_O+Q_C)$.
 
@@ -118,22 +152,21 @@ $$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(28200+14100) = 990 - 705 = 2
 
 Så finner vi profitten til lederbedriften Olivita med å gange optimal pris med optimalt kvantum $Q{_O^*}$ og trekker fra marginal kostnader $c$ og faste kostnader $f_k$:
 
-$$ Q{_O^\pi} = \frac{(a-c)^2}{8b} - f_k =  \frac{(990-50)^2}{(8 \cdot \frac{1}{60})} - 3000000 = 3627000 \tag{8}$$ Profitten til Olivita AS blir å være 3.627.000 kroner.
+$$ \pi_O = \frac{(a-c)^2}{8b} - f_k =  \frac{(990-50)^2}{(8 \cdot \frac{1}{60})} - 3000000 = 3627000 \tag{8}$$ Profitten til Olivita AS blir å være 3.627.000 kroner.
+
+\clearpage
 
 Til slutt for å finne profitten til følgerbedriften (Dr Choice) så repeterer vi forrige prosesss bare at vi ganger med optimalt kvantum for Dr Choice $Q{_C^*}$:
 
-$$Q{_O^\pi} = \frac{(a-c)^2}{16b} - f_k =  \frac{(990-50)^2}{(16 \cdot \frac{1}{60})} - 3000000 = 313500 \tag{9}$$ Og finner at profitten til Dr Choice AS blir å være 313.500 kroner.
+$$\pi_C = \frac{(a-c)^2}{16b} - f_k =  \frac{(990-50)^2}{(16 \cdot \frac{1}{60})} - 3000000 = 313500 \tag{9}$$ Og finner at profitten til Dr Choice AS blir å være 313.500 kroner.
 
 Den optimale tilpasningen blir 28200 kvantum solgt for Olivita mens Dr Choice vil tilpasse seg med halvparten av kvantumet på 14100 flasker.
 
 Totalt kvantum blir 42.300 kvantum solgt for begge bedriftene til en markedspris på 285 kroner per flaske.
 
-\clearpage
+Vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før konkurrenten gjør sitt valg?
 
-b) Vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før konkurrenten gjør sitt valg?
-
-
-## Stackelberg modell sekvensielt eller simultan cournot
+## Stackelberg ovenfor cournot
 
 For å finne ut om det vil være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice, så tar jeg å regner på en cournot modell for symmetriske bedrifter siden begge bedriftene har samme marginalkostnader.
 
@@ -142,7 +175,6 @@ Starter likt som med stackelberg og bruker samme etterspørsel og profittfunksjo
 $$P = a - b(Q_O+Q_C) \tag{10}$$
 
 $$\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{11}$$
-
 Videre så deriverer jeg profittfunksjonene mhp $Q_O$ og $Q_C$:
 
 $$\frac{\partial \pi}{\partial Q_O} = a -b Q_O - b(Q_O+Q_C) -c \tag{12}$$
@@ -158,11 +190,49 @@ Setter så inn $Q{_O^*}$ og $Q{_C^*}$ i etterspørselen for å finne optimal pri
 
 $$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666 = 363.33 \tag{16}$$
 
-Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg (42.300) og prisen blir lavere per enhet (285 kroner). Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner. 
+```{=tex}
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/stackelberg_olivita_dr_choice.png}
+  \captionof{figure}{Stackelberg modell for Olivita og Dr Choice}
+  \label{fig:stackel_olivita_dr_choice}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/cournot_olivita_dr_choice.png}
+  \captionof{figure}{Cournot modell for Olivita og Dr Choice}
+  \label{fig:cournot_olivita_dr_choice}
+  \vspace{-1cm}
+\end{wrapfigure}
+```
 
-Lederbedriften (Olivia) vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. 
+Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg hvis man ser på \autoref{table:stackel_cournot} og prisen blir lavere per enhet. Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner. 
+
+Lederbedriften Olivia vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. 
 
 Totalt vil lederbedriften tjene 3.627.000 kroner under stackelberg og $(P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666$  kroner under cournot. Derfor vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
+
+I \autoref{fig:stackel_olivita_dr_choice} kan vi se hvor stor andel av kvantum produsert hver bedrift får under stackelberg sin modell. Lederbedriften får $\frac{2}{3}$ av kaken med 28.200 kvantum produsert mens følgerbedriften får $\frac{1}{3}$ av kaken med 14100 enheter produsert.
+
+I \autoref{fig:cournot_olivita_dr_choice} kan vi se hvor stor andel av kvantum produsert hver bedrift får under cournot sin modell. Begge bedriftene får lik andel av kaken med 18.800 kvantum produsert hver.
+
+```{=tex}
+\begin{wraptable}{r}{8cm}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ & Stackelberg & Cournot \\ \hline
+$Q{_O^*}$ & 28200 & 18800 \\ \hline
+$Q{_C^*}$ & 14100 & 18800 \\ \hline
+$P^*$ & 285 & 363.33 \\ \hline
+$\pi_O$ & 3627000 & 2890666 \\ \hline
+$\pi_C$ & 313500 & 2890666 \\ \hline
+\end{tabular}
+\caption{Optimalt kvantum, pris og profitt}
+\label{table:stackel_cournot}
+\end{wraptable}
+```
+
+Svaret blir da at det er en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
+
+I \autoref{table:stackel_cournot} kan vi se optimalt kvantum, salgspris og profitt ved stackelberg og cournot modell. Ved cournot deles profitten likt mellom bedriftene, mens ved stackelberg vil Olivia ha større profitt og prisen blir lavere.
 
 \clearpage
 
@@ -384,14 +454,13 @@ sp.simplify((P_opt-c)*Q2_sol2-f_k)
 ```
 
 ```{python}
-a,b,c  = sp.symbols('a b c')
-
-stackelberg=sp.lambdify(
-    (a,b,c), 
-    (Q1_sol,Q2_sol2)
-)
-
-stackelberg(200,1,60)
+# Lager første pai som viser hvor stort kvantum av markedet hver bedrift har ved bruk av stackelbergmodellen
+labels = 'Olivita', 'Dr Choice'
+sizes = [Q1_sol,Q2_sol2]
+colors = ['#DD8D29', '#E2D200']
+explode = (0.1, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/stackelberg_olivita_dr_choice.png', bbox_inches='tight', dpi=600)
 ```
 
 ```{python}
@@ -427,6 +496,19 @@ display((sol[q2]))
 ```
 
 ```{python}
+sol=sp.solve([d_profit1_Q,d_profit2_Q],[q1,q2])
+
+Q1_sol =sp.simplify((sol[q1]))
+Q1_sol
+```
+
+```{python}
+Q2_sol =sp.simplify((sol[q1]))
+Q2_sol
+
+```
+
+```{python}
 def P_demand(q1,q2):
     return a-b*(q1+q2)
 # Optimal pris i sluttmarkedet:
@@ -437,6 +519,13 @@ P_opt
 ```{python}
 # profitt for lederbedrift (Olivita):
 sp.simplify((P_opt-c)*sol[q1]-f_k)
+```
+
+```{python}
+# Lager andre pai som viser hvor stor andel av markedet hver bedrift har ved bruk av cournot modellen
+sizes = [Q1_sol,Q2_sol]
+plt.pie(sizes, explode = explode,labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/cournot_olivita_dr_choice.png', bbox_inches='tight', dpi=600)
 ```
 
 ```{python}
