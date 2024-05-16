@@ -53,6 +53,13 @@ nocite: |
     \textbf{Sammendrag}
 \end{center}
 
+I denne oppgaven blir det sett på optimal tilpasning i markedet for omega-3 produkter og mikrobryggeriøl i Tromsø. Oppgaven er delt inn i to deler.
+
+I den første delen blir det sett på to bedrifter som produserer omega-3 produkter, Olivita og Dr. Choice. Her blir det undersøkt hva som blir optimal tilpasning i markedet når Olivita kan ta strategiske valg før konkurrenten Dr. Choice. Det konkluderes med at det er en fordel for Olivita å være lederbedriften i markedet, da de vil ha større profitt sammenlignet med en situasjon der begge bedriftene tar beslutninger samtidig (Cournot-modellen).
+
+I den andre delen av oppgaven analyseres markedet for mikrobryggeriøl i Tromsø, hvor tre lokale bryggerier konkurrerer. Det blir undersøkt om en fusjon mellom to av bryggeriene vil være lønnsom, samt de samfunnsøkonomiske konsekvensene av en slik fusjon. Resultatene viser at fusjonen er lønnsom for de fusjonerte partene, men spesielt for Graff Brygghus, som ikke er en del av fusjonen hvis det er cournot modell. Fusjonen fører også til en reduksjon i totalt kvantum produsert og en økning i prisen på mikrobryggeriøl under cournot. Dette endrer seg dog om den fusjonerte bedriften blir en stackelberg-lederbedrift.
+
+Til slutt blir det sett på en potensiell fusjon mellom de to gjenværende bryggeriene etter at Graff Brygghus har investert i nytt produksjonsutstyr. Analysen tar også hensyn til Restaurant Gruppen Holding (RGH), som har monopol i restaurantbransjen i Tromsø og kjøper øl fra de lokale bryggeriene. Konklusjonen er at en fusjon vil være lønnsom for bryggeriene, men vil føre til en ytterligere reduksjon i kvantum og en økning i prisen, noe som igjen er negativt for samfunnet.
 
 \newpage
 \hypersetup{linkcolor=black}
@@ -66,7 +73,6 @@ nocite: |
 \hypersetup{linkcolor=blue}
 \newpage
 ```
-
 # Oppslagsverk av variabler
 
 ```{=tex}
@@ -100,7 +106,6 @@ $\pi_i$ & Profittfunksjonen for gitt bedrift \\ \hline
 \label{tab:variabler}
 \end{table}
 ```
-
 Merk: det er mulighet for notasjonsfeil i \autoref{tab:variabler} mot hva som er skrevet videre i oppgaven.
 
 # Oppgave 1 (30%)
@@ -109,13 +114,13 @@ Hva blir optimal tilpasning i dette markedet når Olivita kan gjøre sine strate
 
 ## Valg av modell
 
-Godene vi ser på er substitutter (de er like) hvor Olivita har vært lengst i markedet og dermed er lederbedriften. Derfor blir stackelberg-modellen brukt, hvis den ene bedriften (lederbedriften) øker sin produksjon vil den andre bedriften sin produksjon minke, noe som gjør det til kvantumkonkurranse. 
+Godene vi ser på er substitutter (de er like) hvor Olivita har vært lengst i markedet og dermed er lederbedriften. Derfor blir stackelberg-modellen brukt, hvis den ene bedriften (lederbedriften) øker sin produksjon vil den andre bedriften sin produksjon minke, noe som gjør det til kvantumkonkurranse.
 
 Stackelberg-modellen er en sekvensiell modell hvor kvantum er bedriftenes handlingsvariabler i motsetning til bertrand hvor bedriftene konkurrerer om pris. Lederbedriften Olivita, tar sine beslutninger først og bestemmer hvor mye som produseres som maksimerer deres egen profitt basert på at følgerbedriften Dr Choice vil tilpasse seg sekvensielt med sitt eget kvantum som en reaksjon på Olivita sitt valg av kvantum.
 
 ## Optimal tilpasning ved stackelberg
 
-Ved å bruke en stackelberg modell kan vi finne optimal tilpasning i markedet. 
+Ved å bruke en stackelberg modell kan vi finne optimal tilpasning i markedet.
 
 Den inverse etterspørselen i markedet er gitt ved $P = a−b(Q_O+Q_C)$ hvor $Q_O$ er antall solgte flasker med Olivita, $Q_C$ er antall solgte flasker Easy Choice Omega-3 og $P$ er pris per flaske av Omega-3 produktene. I produksjon av Omega-3 produktene vil begge bedriftene ha konstante marginalkostnader $c$ på kr 50 per produsert flaske. Faste kostnader $f_k$ for begge bedriftene er på 3 millioner kroner. $a = 990$ og $b = \frac{1}{60}$ og da blir den inverse etterspørselen $P = 990−\frac{1}{60}(Q_O+Q_C)$.
 
@@ -169,11 +174,9 @@ Starter likt som med stackelberg og bruker samme etterspørsel og profittfunksjo
 
 $$P = a - b(Q_O+Q_C) \tag{10}$$
 
-$$\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{11}$$
-Videre så deriverer jeg profittfunksjonene mhp $Q_O$ og $Q_C$:
+$$\pi = Q_O(a-b(Q_C+Q_O)-c) \tag{11}$$ Videre så deriverer jeg profittfunksjonene mhp $Q_O$ og $Q_C$:
 
-$$\frac{\partial \pi}{\partial Q_O} = a -b Q_O - b(Q_O+Q_C) -c \tag{12}$$
-$$\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{13}$$
+$$\frac{\partial \pi}{\partial Q_O} = a -b Q_O - b(Q_O+Q_C) -c \tag{12}$$ $$\frac{\partial \pi}{\partial Q_C} = a -b Q_C - b(Q_O+Q_C) -c \tag{13}$$
 
 Og løser for $Q_O$ og $Q_C$:
 
@@ -197,12 +200,11 @@ $$P^* = a - b(Q{_O^*}+Q{_C^*}) = 990 - \frac{1}{60}(18800+18800) = 990 - 626.666
   \vspace{-1cm}
 \end{wrapfigure}
 ```
+Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg hvis man ser på \autoref{table:stackel_cournot} og prisen blir lavere per enhet. Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner.
 
-Fra et samfunnsøkonomisk perspektiv så er det best for samfunnet at lederbedriften setter prisen først, siden det vil være større kvantum produsert under stackelberg hvis man ser på \autoref{table:stackel_cournot} og prisen blir lavere per enhet. Dette vil føre til at flere kunder vil kjøpe produktet og det vil være en velferdsgevinst for samfunnet ovenfor cournot. I dette tilfellet blir totalt kvantum produsert under cournot noe lavere på 37.600, og prisen per enhet noe dyrere på 363.33 kroner. 
+Lederbedriften Olivita vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt.
 
-Lederbedriften Olivita vil også tjene mer på sekvensielt valg under stackelberg enn cournot, siden lederbedriften kan sette kvantum produsert først og følgerbedriften vil tilpasse seg. Dette vil føre til at lederbedriften vil tjene mer enn følgerbedriften siden de konkurrerer om kvantum solgt. 
-
-Totalt vil lederbedriften tjene 3.627.000 kroner under stackelberg og $(P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666$  kroner under cournot. Derfor vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
+Totalt vil lederbedriften tjene 3.627.000 kroner under stackelberg og $(P^* -c) \cdot Q{_O^*} -f_k =(363 -50) \cdot18800 - 3000000 = 2890666$ kroner under cournot. Derfor vil det være en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
 
 I \autoref{fig:stackel_olivita_dr_choice} kan vi se hvor stor andel av kvantum produsert hver bedrift får under stackelberg sin modell. Lederbedriften får $\frac{2}{3}$ av kaken med 28.200 kvantum produsert mens følgerbedriften får $\frac{1}{3}$ av kaken med 14100 enheter produsert.
 
@@ -230,7 +232,6 @@ $\pi_C$ & 313500 & 2890666 \\ \hline
 \label{table:stackel_cournot}
 \end{wraptable}
 ```
-
 Svaret blir da at det er en fordel for Olivita å ha mulighet til å gjøre sine valg før Dr Choice gjør sitt valg.
 
 I \autoref{table:stackel_cournot} kan vi se optimalt kvantum, salgspris og profitt ved stackelberg og cournot modell. Ved cournot deles profitten likt mellom bedriftene, mens ved stackelberg vil Olivita ha større profitt og prisen blir lavere.
@@ -251,8 +252,7 @@ For å finne ut om en fusjon vil være lønnsom for bedriftene til mikrobryggeri
 
 Etterspørselfunksjonen er som tidligere gitt ved:
 
-$$P = a - b(Q_G+Q_B+Q_M) \tag{17}$$
-Lager så en felles profittfunksjon for de tre bryggeriene:
+$$P = a - b(Q_G+Q_B+Q_M) \tag{17}$$ Lager så en felles profittfunksjon for de tre bryggeriene:
 
 $$\pi = Q_G(a-b(Q_G+Q_B+Q_M)-c) \tag{18}$$
 
@@ -268,23 +268,19 @@ Deriverer så mhp $Q_M$ og setter $c_M$ = 7:
 
 $$\frac{\partial \pi}{\partial Q_M} = a - bQ_M - b(Q_G+Q_B+Q_M) -c_M \tag{21}$$
 
-
 Løser så for optimalt kvantum for alle tre bryggerier $Q_G^*$, $Q_B^*$ og $Q_M^*$ ved å sette $\frac{\partial \pi}{\partial Q_G} = 0$, $\frac{\partial \pi}{\partial Q_B} = 0$ og $\frac{\partial \pi}{\partial Q_M} = 0$ i tusener:
 
-$$Q_G^* = \frac{a + c_b -3 c_g+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{22}$$
-$$Q_B^* = \frac{a + c_g -3 c_b+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{23}$$
-$$Q_M^* = \frac{a + c_b  +c_g-3c_m}{4b} = \frac{175 + 10 +10-3 \cdot 7 }{4 \cdot4} = 10.875 \tag{24}$$
+$$Q_G^* = \frac{a + c_b -3 c_g+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{22}$$ $$Q_B^* = \frac{a + c_g -3 c_b+c_m }{4b} = \frac{175 + 10 -3 \cdot 10+7 }{4 \cdot4} = 10.125 \tag{23}$$ $$Q_M^* = \frac{a + c_b  +c_g-3c_m}{4b} = \frac{175 + 10 +10-3 \cdot 7 }{4 \cdot4} = 10.875 \tag{24}$$
 
 Dette forteller oss at det optimale kvantum for Graff Brygghus og Bryggeri 13 er 10.125 tusen flasker og for Mack Mikrobryggeri er det 10.875 tusen flasker.
 
 Setter så inn $Q_G^*$, $Q_B^*$ og $Q_M^*$ i etterspørselfunksjonen for å finne markedsprisen:
 
-$$P = a - b(Q_G^*+Q_B^*+Q_M^*) = 175 - 4 \cdot (10.125+10.125+10.875) = 175 - (4 \cdot 31.125)  = 175 - 124.5 = 50.5 \tag{25}$$
-Markedsprisen blir da 50.5 kr per flaske om de velger å ikke fusjonere.
+$$P = a - b(Q_G^*+Q_B^*+Q_M^*) = 175 - 4 \cdot (10.125+10.125+10.875) = 175 - (4 \cdot 31.125)  = 175 - 124.5 = 50.5 \tag{25}$$ Markedsprisen blir da 50.5 kr per flaske om de velger å ikke fusjonere.
 
 Setter så inn optimalt kvantum $Q_G^*$, $Q_B^*$ og $Q_M^*$ i profittfunksjonen for Graff Brygghus, Bryggeri 13 og Mack Mikrobryggeri for å finne profitten for hvert bryggeri og trekker fra faste kostnader (her er kvantum ganget med 1000 slik at det blir direkte profitt):
 
-$$ \pi_G = \frac{125(a+c_b-3c_g+c_m)^2}{2b} -f_k = \frac{125(175+10-3 \cdot 10+7)^2}{2 \cdot 4} -300000 = 110062.5 \tag{26}$$ 
+$$ \pi_G = \frac{125(a+c_b-3c_g+c_m)^2}{2b} -f_k = \frac{125(175+10-3 \cdot 10+7)^2}{2 \cdot 4} -300000 = 110062.5 \tag{26}$$
 
 $$ \pi_B = \frac{125(a-3c_b+c_g+c_m)^2}{2b} -f_k = \frac{125(175-3 \cdot 10+10+7)^2}{2 \cdot 4} -300000 = 110062.5 \tag{27}$$
 
@@ -295,7 +291,6 @@ Dette forteller oss at profitten for Graff Brygghus blir 110.062,5 kr og før fu
 Vil en slik fusjon være lønnsom for de fusjonerte partene?
 
 For å finne ut om en fusjon vil være lønnsom for de fusjonerte partene så regner vi på en cournot modell for assymetriske bedrifter etter fusjonering.
-
 
 ## Markedet for mikrobryggeri etter fusjonering
 
@@ -315,11 +310,9 @@ Deriverer så mhp $Q_{bm}$ og setter marginalkostnaden $c_{bm}$ = 7:
 
 $$\frac{\partial \pi}{\partial Q_{bm}} = a - bQ_{bm} - b(Q_{bm}+Q_G) -c_{bm} \tag{31}$$
 
-
-Løser så for optimalt kvantum for alle Graff og de to fusjonerte bedriftene $Q_G^*$, $Q_{bm}^*$ ved å sette $\frac{\partial \pi}{\partial Q_G} = 0$ og $\frac{\partial \pi}{\partial Q_{bm}} = 0$  i tusener:
+Løser så for optimalt kvantum for alle Graff og de to fusjonerte bedriftene $Q_G^*$, $Q_{bm}^*$ ved å sette $\frac{\partial \pi}{\partial Q_G} = 0$ og $\frac{\partial \pi}{\partial Q_{bm}} = 0$ i tusener:
 
 $$Q_G^* = \frac{a + c_{bm} -2 c_g }{3b} = \frac{175 + 7 -2 \cdot 10}{3 \cdot4} = 13.5 \tag{32}$$
-
 
 $$Q_{bm}^* = \frac{a -2 \cdot c_{bm}+c_g }{3b} = \frac{175 -2 \cdot 7 + 10}{3 \cdot4} = 14.25 \tag{33}$$
 
@@ -327,15 +320,13 @@ Dette forteller oss at det optimale kvantum for Graff Brygghus blir 13.5 tusen f
 
 Setter så inn $Q_G^*$ og $Q_{bm}^*$ i etterspørselfunksjonen for å finne markedsprisen:
 
-$$P = a - b(Q_G^*+Q_{bm}^*) = 175 - b \cdot (13.5 + 14.25) = 175 - (4 \cdot 27.75)  = 175 - 111 = 64 \tag{34}$$
-Markedsprisen blir da 64 kr per flaske om de velger å fusjonere.
+$$P = a - b(Q_G^*+Q_{bm}^*) = 175 - b \cdot (13.5 + 14.25) = 175 - (4 \cdot 27.75)  = 175 - 111 = 64 \tag{34}$$ Markedsprisen blir da 64 kr per flaske om de velger å fusjonere.
 
 Setter så inn optimalt kvantum $Q_G^*$ og $Q_{bm}^*$ i profittfunksjonen for Graff Brygghus, og den fusjonerte bedriften for å finne profitten for hvert bryggeri og trekker fra faste kostnader (her er kvantum ganget med 1000 slik at det blir direkte profitt):
 
-$$ \pi_G = \frac{1000(a+c_{bm}-2c_g)^2}{9b} -f_k = \frac{1000(175+7 - 2 \cdot 10)^2}{9 \cdot 4} -300000 = 429000 \tag{35}$$ 
+$$ \pi_G = \frac{1000(a+c_{bm}-2c_g)^2}{9b} -f_k = \frac{1000(175+7 - 2 \cdot 10)^2}{9 \cdot 4} -300000 = 429000 \tag{35}$$
 
 $$ \pi_{bm} = \frac{1000(a-2c_{bm}+c_g)^2}{9b} -f_{kbm} = \frac{1000(175-2 \cdot 7+10)^2}{9 \cdot 4} -500000 = 312250 \tag{36}$$
-
 
 Dette forteller oss at profitten etter fusjon for Graff Brygghus blir 429.000 kr og for de fusjonerte bedriftene blir profitten på 312.250 kr.
 
@@ -358,7 +349,6 @@ Dette forteller oss at profitten etter fusjon for Graff Brygghus blir 429.000 kr
   \vspace{-2.5cm}
 \end{wrapfigure}
 ```
-
 Fusjonsparadokset er enkelt forklart ved at etterspørselen etter mikrobryggeriøl ikke endrer seg etter fusjonen og Graff som tidligere delte markedet med to andre bryggerier, vil nå kun dele markedet med ett bryggeri. Dette vil føre til at Graff Brygghus øker produksjonen med $13.15 - 10.125 =  3.025$ tusen flasker i kvantum og markedsprisen per flaske øker fra 50.5 til 64 kr.
 
 Fusjonsparadokset slår til her på profitten og det er Graff Brygghus som tjener mest med en økning fra 110.062,5 kr før fusjon til 429.000 kr i profitt. Før fusjonen hadde Bryggeri 13 og Mack Mikrobryggeri en samlet profitt på 283.125 kr og etter fusjonen øker den til 312.250 kr opp med 29125 kr. Fusjonen vil være lønnsom for de fusjonerte partene på grunn av at de kan flytte produksjonen til Mack hvor marginalkostnaden går ned, dog ikke nært like mye som for Graff Brygghus.
@@ -374,7 +364,6 @@ Utregningen ved at Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir en leder
 \clearpage
 
 I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest. Merk at profitten er reelle tall mens kvantum og pris er i tusener.
-
 
 ```{=tex}
 \begin{table}[H]
@@ -402,7 +391,6 @@ $\pi_M$ & 173062.5 & 312250 & 413781 \\ \hline
 \label{table:fusjon}
 \end{table}
 ```
-
 Videre i oppgaven skal vi anta at fusjon mellom Mack Mikrobryggeri og Bryggeri 13 blir gjennomført, og det nye selskapet vil operere under navnet Mack Mikrobrygg 13. Markedet for produksjon av mikroøl vi da bestå av to lokale produsenter: Mack Mikrobrygg 13 og Graff Brygghus. For å styrke sin posisjon i markedet, investerer Graff Brygghus i nytt og mer effektivt produksjonsutstyr, noe som reduserer deres variable kostnader til kr 7 per flaske. Denne investeringen vil gi selskapet økte faste kostnader på kr 200.000. Totale faste kostnader for begge bryggeriene er da på kr 500.000 for hvert av selskapene.
 
 I restaurantbransjen i Tromsø er Restaurant Gruppen Holdig (RGH) en sentral aktør, som har monopol i sitt segment. RGH kjøper sitt mikroøl fra de to lokale produsentene Mack Mikrobrygg 13 og Graff Brygghus. For å drifte sine restauranter har RGH faste kostnader på kr 600.000.
@@ -417,13 +405,11 @@ Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomf�
 
 \clearpage
 
-
 ## Cournot modell for Graff Brygghus og Mack Mikrobrygg 13
 
 Regner på en cournot modell for symmetriske bedrifter ettersom at de har samme marginalkostnader og faste kostnader. Etterspørselen er gitt ved:
 
-$$P = 175 − 4(Q_G+Q_M) \tag{37}$$
-Deriverer så profittfunksjonen mhp $Q_G$:
+$$P = 175 − 4(Q_G+Q_M) \tag{37}$$ Deriverer så profittfunksjonen mhp $Q_G$:
 
 $$\frac{\partial \pi}{\partial Q_G} = a - bQ_G - b(Q_G+Q_M) -c \tag{38}$$
 
@@ -435,8 +421,7 @@ Løser så for optimalt kvantum for Graff Brygghus og Mack Mikrobrygg 13 $Q_G^*$
 
 $$Q_G^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 4} = 14 \tag{40}$$
 
-$$Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 4} = 14 \tag{41}$$
-Optimal pris i sluttmarkedet:
+$$Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 4} = 14 \tag{41}$$ Optimal pris i sluttmarkedet:
 
 $$P^* = a - b(Q_G^*+Q_M^*) = 175 - 4 \cdot (14+14) = 175 - (4 \cdot 29)  = 175 - 116 = 63 \tag{42}$$
 
@@ -452,48 +437,35 @@ Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 2
 
 Regner på en monopoltilpasning for Mack Mikrobrygg 13 og Graff Brygghus etter fusjon. Begynner ved nedstrømsbedriften:
 
-$$P_n = a − b(Q) \tag{45}$$
-Marginalinntekten er gitt ved:
+$$P_n = a − b(Q) \tag{45}$$ Marginalinntekten er gitt ved:
 
-$$MR_n = a - 2bQ \tag{46}$$
-og nedstrømsbedriften har en marginalkostnad som er $r$.
+$$MR_n = a - 2bQ \tag{46}$$ og nedstrømsbedriften har en marginalkostnad som er $r$.
 
 Setter så marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
 
-$$a - 2bQ = r \tag{47}$$
-Løser så for optimalt kvantum:
+$$a - 2bQ = r \tag{47}$$ Løser så for optimalt kvantum:
 
-$$Q^* = \frac{a - r}{2b} = \frac{175 - r}{4} \tag{48}$$
-Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris, simplifisert får man da:
+$$Q^* = \frac{a - r}{2b} = \frac{175 - r}{4} \tag{48}$$ Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris, simplifisert får man da:
 
-$$P{_n^*} = \frac{r}{2} \frac{175}{2} \tag{49}$$
-Videre så har oppstrømsbedriften dobbel marginalisering, så etterspørsel og marginalinntekten blir:
+$$P{_n^*} = \frac{r}{2} \frac{175}{2} \tag{49}$$ Videre så har oppstrømsbedriften dobbel marginalisering, så etterspørsel og marginalinntekten blir:
 
-$$P_r = a - 2*bQ \tag{50}$$
-$$MR_r = a - 2bQ \tag{51}$$
-Setter så marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
+$$P_r = a - 2*bQ \tag{50}$$ $$MR_r = a - 2bQ \tag{51}$$ Setter så marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
 
-$$a - 2bQ = c = 175 - 8 = 7\tag{52}$$
-Løser så for optimalt kvantum for oppstrømsbedriften:
+$$a - 2bQ = c = 175 - 8 = 7\tag{52}$$ Løser så for optimalt kvantum for oppstrømsbedriften:
 
 $$Q^* = \frac{a - c}{4b} = \frac{175 - 7}{8} = 21\tag{53}$$
 
 Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris:
 
-$$P{_r^*} = \frac{a}{2} + \frac{c}{2} = \frac{175}{2} + \frac{7}{2} = 91\tag{54}$$
-Finner så prisen til sluttbruker ved å sette inn optimal pris fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
+$$P{_r^*} = \frac{a}{2} + \frac{c}{2} = \frac{175}{2} + \frac{7}{2} = 91\tag{54}$$ Finner så prisen til sluttbruker ved å sette inn optimal pris fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
 
-$$P{_n^*} = \frac{3a}{4} + \frac{c}{4} = \frac{3 \cdot 175}{4} + \frac{7}{4} = 133 \tag{55}$$
-Optimalt kvantum blir da det samme i sluttmarked ved å sette inn optimal kvantum fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
+$$P{_n^*} = \frac{3a}{4} + \frac{c}{4} = \frac{3 \cdot 175}{4} + \frac{7}{4} = 133 \tag{55}$$ Optimalt kvantum blir da det samme i sluttmarked ved å sette inn optimal kvantum fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
 
-$$Q^* = \frac{a - c}{8b} = \frac{175 - 7}{8 \cdot 2} = 21 \tag{56}$$
-Profitt for oppstrømsbedriften blir da:
+$$Q^* = \frac{a - c}{8b} = \frac{175 - 7}{8 \cdot 2} = 21 \tag{56}$$ Profitt for oppstrømsbedriften blir da:
 
-$$\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2} - 1000000= 764000 \tag{57}$$
-og profitt for nedstrømsbedriften blir:
+$$\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2} - 1000000= 764000 \tag{57}$$ og profitt for nedstrømsbedriften blir:
 
 $$\pi_n = \frac{(125a - c)^2}{2b} - fk_n = \frac{(125 \cdot 175- 7)^2}{4}= 282000\tag{58}$$
-
 
 ```{=tex}
 \begin{wrapfigure}{r}{0.5\textwidth}
@@ -507,12 +479,11 @@ $$\pi_n = \frac{(125a - c)^2}{2b} - fk_n = \frac{(125 \cdot 175- 7)^2}{4}= 28200
   \vspace{-2.5cm}
 \end{wrapfigure}
 ```
-
 Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir $(284.000*2) =568000$ kr før fusjon hver for seg og 764.000 samlet etter fusjon, kvantumet solgt blir 21 i tusener og pris til nedstrømsbedrift blir 91 kroner per flaske mens utsalgspris etter fusjon blir 133 kroner, oppsumert kan man se dette i \autoref{table:fusjon}. Basert på min analyse vil jeg anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjonen med Graff Brygghus for å bli monopolist.
 
 Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus?
 
-De samfunnsøkonomiske effektene blir at det blir produsert mindre mikrobryggeriøl i markedet, fra 28 tusener ned til 21 tusen. Prisen per flaske vil øke fra 63 kroner til 91. Og i \autoref{fig:test} ser man at før fusjon har begge bryggerier like stor markedsandel med kvantum solgt. 
+De samfunnsøkonomiske effektene blir at det blir produsert mindre mikrobryggeriøl i markedet, fra 28 tusener ned til 21 tusen. Prisen per flaske vil øke fra 63 kroner til 91. Og i \autoref{fig:test} ser man at før fusjon har begge bryggerier like stor markedsandel med kvantum solgt.
 
 I \autoref{fig:test2} kan vi se at etter fusjonen øker bedriftene sin profitt selv om de faste kostnadene ikke endrer seg og totalt er på en million.
 
@@ -542,7 +513,6 @@ $\pi_M$ & 284000 & 764000 \\ \hline
 \label{table:fusjon}
 \end{table}
 ```
-
 ## Konklusjon
 
 Samfunnsøkonomisk ser det ut som at samfunnet generelt taper på at bedrifter fusjonerer under cournot modell. Paradoksalt taper også bedriftene som fusjonerer selv på det, med mindre de blir monopolist eller kan bli en lederbedrift. Samfunnsøkonomisk er det best at bedriftene ikke blir monopolister, men at det er flere aktører i markedet hvor det er sekvensiell konkurranse under stackelberg modell. Dette vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest.
@@ -561,6 +531,8 @@ Samfunnsøkonomisk ser det ut som at samfunnet generelt taper på at bedrifter f
 \section {Appendix Generell KI bruk}
 
 I løpet av koden så kan det ses mange \# kommentarer der det er skrevet for eks "#fillbetween q1 and q2". Når jeg skriver kode i Visual Studio Code så finnes det en plugin som heter Github Copilot. Når vi skriver slike kommentarer så kan den foresøke å fullføre kodelinjene mens jeg skriver de. Noen ganger klarer den det, men andre ikke. Det er vanskelig å dokumentere hvert bruk der den er brukt siden det "går veldig fort" men siden det ikke er fått på plass en slik dokumentasjon så kan all python kode der det er brukt kommentarer antas som at det er brukt Github Copilot. Nærmere info om dette KI verktøyet kan ses på <https://github.com/features/copilot>
+
+[Spurte google gemini om å skrive et sammendrag](https://g.co/gemini/share/2d2e81b0e515)
 
 \clearpage
 
@@ -679,7 +651,6 @@ display(d_profit2_Q)
 
 ```
 
-
 ```{python}
 sol=sp.solve([d_profit1_Q,d_profit2_Q],[q1,q2])
 
@@ -774,7 +745,6 @@ P_opt=P_demand(q_g,q_b,q_m).subs({q_g:sol[q_g],q_b:sol[q_b],q_m:sol[q_m]})
 P_opt
 ```
 
-
 ```{python}
 # Husk å gange med 1000 for å finne profitt siden tall er oppgitt i tusen
 
@@ -794,7 +764,7 @@ display(Mack)
 Mack+Bryggeri_13
 ```
 
-```{python}  
+```{python}
 # Oppgave 2 figur for mikrobryggeriene
 labels = 'Graff Brygghus', 'Bryggeri 13', 'Mack Mikrobryggeri'
 sizes = [sol[q_g],sol[q_b],sol[q_m]]
@@ -803,7 +773,6 @@ explode = (0.1, 0, 0)  # explode 1st slice
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
 plt.savefig('dokumentobjekter/figurer/cournot_mikrobryggerier.png', bbox_inches='tight', dpi=600)
 ```
-
 
 ```{python}
 # Fusjonerer to asymmetriske cournot bedrifter Mack mikrobryggeri og Bryggeri 13
@@ -840,7 +809,6 @@ display(d_profit1_Q)
 display(d_profit2_Q)
 ```
 
-
 ```{python}
 # Kvantum er i tusener
 
@@ -852,7 +820,6 @@ display(float(sol[q_g]))
 display(float(sol[q_bm]))
 
 ```
-
 
 ```{python}
 def P_demand(q_g,q_bm):
@@ -885,7 +852,7 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%',
 plt.savefig('dokumentobjekter/figurer/fusjonert_bedrift.png',bbox_inches='tight', dpi=600)
 ```
 
-```{python}  
+```{python}
 q1, q2,c, a, b, pi,i=sp.symbols('q1 q2 c a b pi i')
 
 a = 175
@@ -915,7 +882,6 @@ Q2_sol1
 d_profit1_Q=sp.diff(profit(q1,Q2_sol1,7,a,b),q1)
 d_profit1_Q
 ```
-
 
 ```{python}
 
@@ -958,7 +924,6 @@ def profitt(q2):
 svar_2 = sp.simplify(profitt(q2))
 round(svar_2,2)
 ```
-
 
 ```{python}
 # Lager pai som viser hvor stor andel av markedet hver bedrift har ved bruk av stackelbergmodellen etter fusjonering
@@ -1045,7 +1010,6 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%',
 plt.savefig('dokumentobjekter/figurer/fusjonert_bedrift_symmetrisk.png', bbox_inches='tight', dpi=600)
 ```
 
-
 ```{python}
 # Oppstrømsbedriftene er bryggeriene
 # Nedstrømsbedriften er Restaurant Gruppen Holding (RGH)
@@ -1065,7 +1029,6 @@ def demand(Q):
 def marginalrevenue(Q):
     return (A-2*B*Q)
 ```
-
 
 ```{python}
 Q=sp.symbols('Q', real=True, positive=True)
@@ -1099,7 +1062,6 @@ equ=sp.Eq(marginalrevenue(Qr),c)
 equ
 ```
 
-
 ```{python}
 Qr_equ=sp.solve(equ,Qr)[0]
 Qr_equ
@@ -1115,7 +1077,6 @@ r_eq
 # Finner pris ved å sette totalt kvantum og pris fra oppstrømsbedriften inn i etterspørselen til nedstrømsbedriften
 P_eq.subs({Qd:Qd_equ,r:r_eq})
 ```
-
 
 ```{python}
 # Optimal kvantum i sluttmarkedet:
@@ -1149,5 +1110,3 @@ explode = (0.1, 0)  # explode 1st slice
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
 plt.savefig('dokumentobjekter/figurer/profitt_fusjon.png', bbox_inches='tight', dpi=600)
 ```
-
-
