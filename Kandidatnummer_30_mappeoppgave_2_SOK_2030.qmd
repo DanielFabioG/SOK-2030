@@ -354,6 +354,8 @@ $$ \pi_{bm} = \frac{1000(a-2c_{bm}+c_g)^2}{9b} -f_{kbm} = \frac{1000(175-2 \cdot
 
 Dette forteller oss at profitten etter fusjon for Graff Brygghus blir 429.000 kr og for de fusjonerte bedriftene blir profitten på 312.250 kr.
 
+\clearpage
+
 ## Fusjonsparadokset
 
 ```{=tex}
@@ -368,7 +370,7 @@ Dette forteller oss at profitten etter fusjon for Graff Brygghus blir 429.000 kr
   \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/stackelberg_mack_graff.png}
   \captionof{figure}{Stackelberg modell etter fusjon}
   \label{fig:stackelberg_etter_fusjon}
-  \vspace{-1cm}
+  \vspace{-2.5cm}
 \end{wrapfigure}
 ```
 
@@ -386,7 +388,8 @@ Utregningen ved at Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir en leder
 
 \clearpage
 
-I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest.
+I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest. Merk at profitten er reelle tall mens kvantum og pris er i tusenener.
+
 
 ```{=tex}
 \begin{table}[H]
@@ -849,7 +852,7 @@ round(svar_2,2)
 
 ```{python}
 # Lager pai som viser hvor stor andel av markedet hver bedrift har ved bruk av stackelbergmodellen etter fusjonering
-labels = ['Mack Mikrobrygg 13', 'Graff Brygghus']
+labels = ['Fusjonert bedrift', 'Graff Brygghus']
 sizes = [Q1_sol,Q2_sol2]
 colors = ['#A42820', '#5F5647']
 explode = (0.1, 0)  # explode 1st slice
