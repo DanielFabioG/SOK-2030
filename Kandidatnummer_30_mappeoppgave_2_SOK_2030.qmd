@@ -53,20 +53,6 @@ nocite: |
     \textbf{Sammendrag}
 \end{center}
 
-Del opp og strukturer oppgaven bedre.
-
-Forklar bedre og bruk pensum mer på begrunnelse av modeller. 
-
-Lag paier for å illustrere bedre.
-
-Lag en tabell som viser hva og hvilke variabler som er definert i oppgaven.
-
-Lag en tabell som viser profitt med stackelberg og cournot modell i oppgave 1.
-
-Avslutningsvis lag to tabeller som viser profitter til bedriftene før og etter fusjon i oppgave 2 med de forskjellige modellene.
-
-Konklusjon og så få chatgpt til å skrive sammendraget.
-
 
 \newpage
 \hypersetup{linkcolor=black}
@@ -436,7 +422,7 @@ Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomf�
 
 Regner på en cournot modell for symmetriske bedrifter ettersom at de har samme marginalkostnader og faste kostnader. Etterspørselen er gitt ved:
 
-$$P = 175 − 2(Q_G+Q_M) \tag{37}$$
+$$P = 175 − 4(Q_G+Q_M) \tag{37}$$
 Deriverer så profittfunksjonen mhp $Q_G$:
 
 $$\frac{\partial \pi}{\partial Q_G} = a - bQ_G - b(Q_G+Q_M) -c \tag{38}$$
@@ -447,22 +433,20 @@ $$\frac{\partial \pi}{\partial Q_M} = a - bQ_M - b(Q_G+Q_M) -c \tag{39}$$
 
 Løser så for optimalt kvantum for Graff Brygghus og Mack Mikrobrygg 13 $Q_G^*$ og $Q_M^*$ ved å sette $\frac{\partial \pi}{\partial Q_G} = 0$ og $\frac{\partial \pi}{\partial Q_M} = 0$ i tusener:
 
-$$Q_G^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{40}$$
+$$Q_G^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 4} = 14 \tag{40}$$
 
-$$Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{41}$$
+$$Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 4} = 14 \tag{41}$$
 Optimal pris i sluttmarkedet:
 
-$$P^* = a - b(Q_G^*+Q_M^*) = 175 - 2 \cdot (28+28) = 175 - (2 \cdot 58)  = 175 - 116 = 63 \tag{42}$$
+$$P^* = a - b(Q_G^*+Q_M^*) = 175 - 4 \cdot (14+14) = 175 - (4 \cdot 29)  = 175 - 116 = 63 \tag{42}$$
 
 Setter så inn $Q_G^*$ og $Q_M^*$ i profittfunksjonen for Graff Brygghus og Mack Mikrobrygg 13 for å finne profitten for hvert bryggeri og trekker fra faste kostnader (her er kvantum ganget med 1000 slik at det blir direkte profitt):
 
-$$ \pi_G = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{43}$$
+$$ \pi_G = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 4} -500000 = 284000 \tag{43}$$
 
-$$ \pi_M = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{44}$$
+$$ \pi_M = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 4} -500000 = 284000 \tag{44}$$
 
-Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 1.068.000 kr hver før fusjon, kvantumet solgt blir 28 i tusener hver og pris til nedstrømsbedrift blir 63 kroner per flaske.
-
-\clearpage
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 284.000 kr hver før fusjon, kvantumet solgt blir 14 i tusener hver og pris til nedstrømsbedrift blir 63 kroner per flaske.
 
 ## Monopoltilpasning ved at Mack Mikrobrygg 13 og Graff Brygghus fusjonerer
 
@@ -505,20 +489,63 @@ Optimalt kvantum blir da det samme i sluttmarked ved å sette inn optimal kvantu
 $$Q^* = \frac{a - c}{8b} = \frac{175 - 7}{8 \cdot 2} = 21 \tag{56}$$
 Profitt for oppstrømsbedriften blir da:
 
-$$\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2}= 1264000 \tag{57}$$
+$$\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2} - 1000000= 764000 \tag{57}$$
 og profitt for nedstrømsbedriften blir:
 
 $$\pi_n = \frac{(125a - c)^2}{2b} - fk_n = \frac{(125 \cdot 175- 7)^2}{4}= 282000\tag{58}$$
 
 
-Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 1.264.000 kr før fusjon hver for seg og 282.000 kr etter fusjon, kvantumet solgt blir 21 i tusener og pris til nedstrømsbedrift blir 133 kroner per flaske.
+```{=tex}
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/fusjonert_bedrift_symmetrisk.png}
+  \captionof{figure}{Symmetrisk cournot markedsandel før fusjon}
+  \label{fig:test}
+  \includegraphics[width=0.5\textwidth]{dokumentobjekter/figurer/profitt_fusjon.png}
+  \captionof{figure}{Profitt før og etter fusjon}
+  \label{fig:test2}
+  \vspace{-2.5cm}
+\end{wrapfigure}
+```
 
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir $(284.000*2) =568000$ kr før fusjon hver for seg og 764.000 samlet etter fusjon, kvantumet solgt blir 21 i tusener og pris til nedstrømsbedrift blir 91 kroner per flaske mens utsalgspris etter fusjon blir 133 kroner, oppsumert kan man se dette i \autoref{table:fusjon}. Basert på min analyse vil jeg anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjonen med Graff Brygghus for å bli monopolist.
 
-Må se over dette imorgen lmao for kokt å jobbe med nå.
+Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus?
 
-Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus.
+De samfunnsøkonomiske effektene blir at det blir produsert mindre mikrobryggeriøl i markedet, fra 28 tusener ned til 21 tusen. Prisen per flaske vil øke fra 63 kroner til 91. Og i \autoref{fig:test} ser man at før fusjon har begge bryggerier like stor markedsandel med kvantum solgt. 
 
-Blabla noe.
+I \autoref{fig:test2} kan vi se at etter fusjonen øker bedriftene sin profitt selv om de faste kostnadene ikke endrer seg og totalt er på en million.
+
+\clearpage
+
+Oppsummerer resultatene i en tabell:
+
+```{=tex}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{winered}
+ & Cournot før fusjon & Monopol \\ \hline
+ \rowcolor{wesgrey}
+$Q_G^*$ & 14 & 21 \\ \hline
+ \rowcolor{wesgrey}
+$Q_M^*$ & 14 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$P^*$ & 63 & 91 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_G$ & 284000 & 0 \\ \hline
+ \rowcolor{wesgrey}
+$\pi_M$ & 284000 & 764000 \\ \hline
+\end{tabular}
+\caption{Optimalt kvantum, pris og profitt før og etter fusjon}
+\label{table:fusjon}
+\end{table}
+```
+
+## Konklusjon
+
+Samfunnsøkonomisk ser det ut som at samfunnet generelt taper på at bedrifter fusjonerer under cournot modell. Paradoksalt taper også bedriftene som fusjonerer selv på det, med mindre de blir monopolist eller kan bli en lederbedrift. Samfunnsøkonomisk er det best at bedriftene ikke blir monopolister, men at det er flere aktører i markedet hvor det er sekvensiell konkurranse under stackelberg modell. Dette vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest.
 
 \clearpage
 
@@ -956,8 +983,7 @@ plt.savefig('dokumentobjekter/figurer/stackelberg_mack_graff.png',bbox_inches='t
 q_g, q_bm, a, b, f_k,c, f_k_bm=sp.symbols('q_g c_bm a b f_k c f_k_bm')
 
 a = 175
-# Ny etterspørsel
-b = 2
+b = 4
 c = 7
 f_k = 500000
 
@@ -1002,10 +1028,11 @@ P_opt
 
 ```{python}
 # profitt for (Graff brygghus):
-display(sp.simplify((P_opt-c)*(sol[q_g])*1000-f_k))
-
+graff_proffittt = sp.simplify((P_opt-c)*(sol[q_g])*1000-f_k)
+display(graff_proffittt)
 # profitt for fusjonert bedrift
-display(sp.simplify((P_opt-c)*(sol[q_bm]*1000)-f_k))
+mack_fusjonert_proff = sp.simplify(P_opt-c)*(sol[q_bm]*1000)-f_k
+display(mack_fusjonert_proff)
 ```
 
 ```{python}
@@ -1099,28 +1126,28 @@ sp.simplify(Qd_opt)
 ```{python}
 # profitt for oppstrømsbedriften ved monopol og fusjon
 def profitt(Qr):
-    return (r_eq-c)*Qr_equ
+    return (r_eq-c)*(Qr_equ)*1000-1000000
 
-sp.simplify(profitt(Qr_equ))
+proff_etter_fusj=sp.simplify(profitt(Qr_equ))
+proff_etter_fusj
 ```
 
 ```{python}
-# profitt for nedstrømsbedriften
-def profitt(Qd):
-    return (P_eq.subs({Qd:Qd_equ,r:r_eq})-r_eq)*Qd_equ.subs({Qd:Qd_equ,r:r_eq})
+    # profitt for nedstrømsbedriften
+    def profitt(Qd):
+        return (P_eq.subs({Qd:Qd_equ,r:r_eq})-r_eq)*Qd_equ.subs({Qd:Qd_equ,r:r_eq})*1000-600000
 
-sp.simplify(profitt(Qr_equ))
+    sp.simplify(profitt(Qr_equ))
 ```
 
 ```{python}
-# Lager figur som viser hvor stor andel av markedet hver bedrift har ved bruk av monopol
-labels = ['Mack Mikrobryggeri 13', 'RGH']
-sizes = [Qr_equ,Qd_opt]
+# Lager figur som viser hvor stor profitt som er før og etter fusjon
+labels = '$\pi$ Før fusjon', '$\pi$ Etter fusjon'
+sizes = [graff_proffittt+mack_fusjonert_proff, proff_etter_fusj]
 colors = ['#A42820', '#5F5647']
 explode = (0.1, 0)  # explode 1st slice
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
-plt.savefig('dokumentobjekter/figurer/monopol_oppstrøm_nedstrøm.png')
-
+plt.savefig('dokumentobjekter/figurer/profitt_fusjon.png', bbox_inches='tight', dpi=600)
 ```
 
 
