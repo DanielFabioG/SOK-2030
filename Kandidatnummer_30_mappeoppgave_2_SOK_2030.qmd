@@ -388,7 +388,7 @@ Utregningen ved at Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir en leder
 
 \clearpage
 
-I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest. Merk at profitten er reelle tall mens kvantum og pris er i tusenener.
+I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet og prisen per flaske blir lavest. Merk at profitten er reelle tall mens kvantum og pris er i tusener.
 
 
 ```{=tex}
@@ -428,13 +428,96 @@ For å ytterligere styrke sin posisjon i oppstrømsmarkedet, vurderer ledelsen i
 
 Som konsulent for styret i Mack Mikrobrygg 13, er du bedt om å analysere markedskonsekvensene av en potensiell fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus. Analysen skal omfatte en vurdering av dagens markedstilpasning og en sammenligning med tilpasningen etter en eventuell fusjon i oppstrømsmarkedet.
 
+Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjon med Graff Brygghus?
+
 \clearpage
 
-Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å gjennomføre fusjon med Graff Brygghus?
 
 ## Cournot modell for Graff Brygghus og Mack Mikrobrygg 13
 
-c) Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus.
+Regner på en cournot modell for symmetriske bedrifter ettersom at de har samme marginalkostnader og faste kostnader. Etterspørselen er gitt ved:
+
+$$P = 175 − 2(Q_G+Q_M) \tag{37}$$
+Deriverer så profittfunksjonen mhp $Q_G$:
+
+$$\frac{\partial \pi}{\partial Q_G} = a - bQ_G - b(Q_G+Q_M) -c \tag{38}$$
+
+Deriverer så mhp $Q_M$:
+
+$$\frac{\partial \pi}{\partial Q_M} = a - bQ_M - b(Q_G+Q_M) -c \tag{39}$$
+
+Løser så for optimalt kvantum for Graff Brygghus og Mack Mikrobrygg 13 $Q_G^*$ og $Q_M^*$ ved å sette $\frac{\partial \pi}{\partial Q_G} = 0$ og $\frac{\partial \pi}{\partial Q_M} = 0$ i tusener:
+
+$$Q_G^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{40}$$
+
+$$Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{41}$$
+Optimal pris i sluttmarkedet:
+
+$$P^* = a - b(Q_G^*+Q_M^*) = 175 - 2 \cdot (28+28) = 175 - (2 \cdot 58)  = 175 - 116 = 63 \tag{42}$$
+
+Setter så inn $Q_G^*$ og $Q_M^*$ i profittfunksjonen for Graff Brygghus og Mack Mikrobrygg 13 for å finne profitten for hvert bryggeri og trekker fra faste kostnader (her er kvantum ganget med 1000 slik at det blir direkte profitt):
+
+$$ \pi_G = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{43}$$
+
+$$ \pi_M = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{44}$$
+
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 1.068.000 kr hver før fusjon, kvantumet solgt blir 28 i tusener hver og pris til nedstrømsbedrift blir 63 kroner per flaske.
+
+\clearpage
+
+## Monopoltilpasning ved at Mack Mikrobrygg 13 og Graff Brygghus fusjonerer
+
+Regner på en monopoltilpasning for Mack Mikrobrygg 13 og Graff Brygghus etter fusjon. Begynner ved nedstrømsbedriften:
+
+$$P_n = a − b(Q) \tag{45}$$
+Marginalinntekten er gitt ved:
+
+$$MR_n = a - 2bQ \tag{46}$$
+og nedstrømsbedriften har en marginalkostnad som er $r$.
+
+Setter så marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
+
+$$a - 2bQ = r \tag{47}$$
+Løser så for optimalt kvantum:
+
+$$Q^* = \frac{a - r}{2b} = \frac{175 - r}{4} \tag{48}$$
+Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris, simplifisert får man da:
+
+$$P{_n^*} = \frac{r}{2} \frac{175}{2} \tag{49}$$
+Videre så har oppstrømsbedriften dobbel marginalisering, så etterspørsel og marginalinntekten blir:
+
+$$P_r = a - 2*bQ \tag{50}$$
+$$MR_r = a - 2bQ \tag{51}$$
+Setter så marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
+
+$$a - 2bQ = c = 175 - 8 = 7\tag{52}$$
+Løser så for optimalt kvantum for oppstrømsbedriften:
+
+$$Q^* = \frac{a - c}{4b} = \frac{175 - 7}{8} = 21\tag{53}$$
+
+Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris:
+
+$$P{_r^*} = \frac{a}{2} + \frac{c}{2} = \frac{175}{2} + \frac{7}{2} = 91\tag{54}$$
+Finner så prisen til sluttbruker ved å sette inn optimal pris fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
+
+$$P{_n^*} = \frac{3a}{4} + \frac{c}{4} = \frac{3 \cdot 175}{4} + \frac{7}{4} = 133 \tag{55}$$
+Optimalt kvantum blir da det samme i sluttmarked ved å sette inn optimal kvantum fra oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
+
+$$Q^* = \frac{a - c}{8b} = \frac{175 - 7}{8 \cdot 2} = 21 \tag{56}$$
+Profitt for oppstrømsbedriften blir da:
+
+$$\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2}= 1264000 \tag{57}$$
+og profitt for nedstrømsbedriften blir:
+
+$$\pi_n = \frac{(125a - c)^2}{2b} - fk_n = \frac{(125 \cdot 175- 7)^2}{4}= 282000\tag{58}$$
+
+
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg 13 blir 1.264.000 kr før fusjon hver for seg og 282.000 kr etter fusjon, kvantumet solgt blir 21 i tusener og pris til nedstrømsbedrift blir 133 kroner per flaske.
+
+
+Må se over dette imorgen lmao for kokt å jobbe med nå.
+
+Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack Mikrobrygg 13 og Graff Brygghus.
 
 \clearpage
 
@@ -849,7 +932,6 @@ round(svar_2,2)
 ```
 
 
-
 ```{python}
 # Lager pai som viser hvor stor andel av markedet hver bedrift har ved bruk av stackelbergmodellen etter fusjonering
 labels = ['Fusjonert bedrift', 'Graff Brygghus']
@@ -859,4 +941,185 @@ explode = (0.1, 0)  # explode 1st slice
 plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
 plt.savefig('dokumentobjekter/figurer/stackelberg_mack_graff.png',bbox_inches='tight', dpi=600)
 ```
+
+```{python}
+# Markedet etter fusjon med to symmetriske bedrifter under cournot konkurranse
+
+# Oppgave 2b
+# q_g er kvantum til Graff brygghus
+# q_bm blir kvantum til Mack mikrobrygg 13
+# ny fk for den fusjonerte bedriften blir 500 000 samt for Graff brygghus
+# c_g = c_bm = 7 siden de er symmetriske og graff har nytt produksjonsutstyr
+
+# regner cournot likevekt
+q_g, q_bm, a, b, f_k,c, f_k_bm=sp.symbols('q_g c_bm a b f_k c f_k_bm')
+
+a = 175
+# Ny etterspørsel
+b = 2
+c = 7
+f_k = 500000
+
+def P_demand(Q,a,b):
+    return a-b*Q
+
+
+def profit(q_g,q_bm,c,a,b):
+    return (P_demand(q_g+q_bm,a,b)-c)*q_g
+```
+
+```{python}
+d_profit1_Q=sp.diff(profit(q_g,q_bm,c,a,b),q_g)
+d_profit2_Q=sp.diff(profit(q_bm,q_g,c,a,b),q_bm)
+
+
+display(d_profit1_Q)
+display(d_profit2_Q)
+
+```
+
+```{python}
+# Kvantum er i tusener
+
+sol=sp.solve([d_profit1_Q,d_profit2_Q],[q_g,q_bm])
+
+# Kvantum til Graff brygghus
+display(sol[q_g])
+# Kvantum til fusjonert bedrift
+display(sol[q_bm])
+```
+
+```{python}
+def P_demand(q_g,q_bm):
+    return a-b*(q_g+q_bm)
+
+# Optimal pris i sluttmarkedet:
+P_opt=P_demand(q_g,q_bm).subs({q_g:sol[q_g],q_bm:sol[q_bm]})
+
+P_opt
+```
+
+```{python}
+# profitt for (Graff brygghus):
+display(sp.simplify((P_opt-c)*(sol[q_g])*1000-f_k))
+
+# profitt for fusjonert bedrift
+display(sp.simplify((P_opt-c)*(sol[q_bm]*1000)-f_k))
+```
+
+```{python}
+# Figur for markedet før fusjon
+labels = 'Graff Brygghus', 'Mack Mikrobrygg 13'
+sizes = [sol[q_g],sol[q_bm]]
+colors = ['#A42820', '#5F5647']
+explode = (0.1, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/fusjonert_bedrift_symmetrisk.png', bbox_inches='tight', dpi=600)
+```
+
+
+```{python}
+# Oppstrømsbedriftene er bryggeriene
+# Nedstrømsbedriften er Restaurant Gruppen Holding (RGH)
+# Tilpasning ved monopol for oppstrøm og nedstrømsbedriftene
+
+
+A, B,Qd,Qr,QI,P,c, r=sp.symbols('A B Qd Qr QI P c r')
+
+
+A = 175
+B = 2
+c = 7
+
+def demand(Q):
+    return (A-B*Q)
+
+def marginalrevenue(Q):
+    return (A-2*B*Q)
+```
+
+
+```{python}
+Q=sp.symbols('Q', real=True, positive=True)
+equ=sp.Eq(marginalrevenue(Q),r)
+equ
+```
+
+```{python}
+Qd_equ=sp.solve(equ,Q)[0]
+Qd_equ
+```
+
+```{python}
+P_eq=demand(Qd_equ)
+P_eq
+```
+
+```{python}
+
+def demand(Qr):
+    return (A-2*B*Qr)
+
+def marginalrevenue(Qr):
+    return (A-4*B*Qr)
+```
+
+```{python}
+
+Qr=sp.symbols('Qr', real=True, positive=True)
+equ=sp.Eq(marginalrevenue(Qr),c)
+equ
+```
+
+
+```{python}
+Qr_equ=sp.solve(equ,Qr)[0]
+Qr_equ
+```
+
+```{python}
+# optimal pris fra oppstrømsbedriften
+r_eq=demand(Qr_equ)
+r_eq
+```
+
+```{python}
+# Finner pris ved å sette totalt kvantum og pris fra oppstrømsbedriften inn i etterspørselen til nedstrømsbedriften
+P_eq.subs({Qd:Qd_equ,r:r_eq})
+```
+
+
+```{python}
+# Optimal kvantum i sluttmarkedet:
+Qd_opt=Qd_equ.subs({r:r_eq})
+sp.simplify(Qd_opt)
+```
+
+```{python}
+# profitt for oppstrømsbedriften ved monopol og fusjon
+def profitt(Qr):
+    return (r_eq-c)*Qr_equ
+
+sp.simplify(profitt(Qr_equ))
+```
+
+```{python}
+# profitt for nedstrømsbedriften
+def profitt(Qd):
+    return (P_eq.subs({Qd:Qd_equ,r:r_eq})-r_eq)*Qd_equ.subs({Qd:Qd_equ,r:r_eq})
+
+sp.simplify(profitt(Qr_equ))
+```
+
+```{python}
+# Lager figur som viser hvor stor andel av markedet hver bedrift har ved bruk av monopol
+labels = ['Mack Mikrobryggeri 13', 'RGH']
+sizes = [Qr_equ,Qd_opt]
+colors = ['#A42820', '#5F5647']
+explode = (0.1, 0)  # explode 1st slice
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+plt.savefig('dokumentobjekter/figurer/monopol_oppstrøm_nedstrøm.png')
+
+```
+
 

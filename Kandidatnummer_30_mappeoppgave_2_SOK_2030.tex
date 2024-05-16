@@ -738,7 +738,8 @@ mulighet å bli lederbedrift og bestemme kvantum i markedet som vises i
 I \autoref{table:fusjon} kan man se at det også er samfunnsøkonomisk bra
 hvis Mack Mikrobryggeri og Bryggeri 13 fusjonerer og blir lederbedrift
 da det vil føre til at det blir produsert mer mikrobryggeriøl i markedet
-og prisen per flaske blir lavest.
+og prisen per flaske blir lavest. Merk at profitten er reelle tall mens
+kvantum og pris er i tusener.
 
 \begin{table}[H]
 \centering
@@ -796,22 +797,115 @@ og Graff Brygghus. Analysen skal omfatte en vurdering av dagens
 markedstilpasning og en sammenligning med tilpasningen etter en
 eventuell fusjon i oppstrømsmarkedet.
 
-\clearpage
-
 Basert på din analyse, vil du anbefale styret i Mack Mikrobrygg 13 å
 gjennomføre fusjon med Graff Brygghus?
+
+\clearpage
 
 \subsection{Cournot modell for Graff Brygghus og Mack Mikrobrygg
 13}\label{cournot-modell-for-graff-brygghus-og-mack-mikrobrygg-13}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack
-  Mikrobrygg 13 og Graff Brygghus.
-\end{enumerate}
+Regner på en cournot modell for symmetriske bedrifter ettersom at de har
+samme marginalkostnader og faste kostnader. Etterspørselen er gitt ved:
+
+\[P = 175 − 2(Q_G+Q_M) \tag{37}\] Deriverer så profittfunksjonen mhp
+\(Q_G\):
+
+\[\frac{\partial \pi}{\partial Q_G} = a - bQ_G - b(Q_G+Q_M) -c \tag{38}\]
+
+Deriverer så mhp \(Q_M\):
+
+\[\frac{\partial \pi}{\partial Q_M} = a - bQ_M - b(Q_G+Q_M) -c \tag{39}\]
+
+Løser så for optimalt kvantum for Graff Brygghus og Mack Mikrobrygg 13
+\(Q_G^*\) og \(Q_M^*\) ved å sette
+\(\frac{\partial \pi}{\partial Q_G} = 0\) og
+\(\frac{\partial \pi}{\partial Q_M} = 0\) i tusener:
+
+\[Q_G^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{40}\]
+
+\[Q_M^* = \frac{a - c}{3b} = \frac{175 - 7}{3 \cdot 2} = 28 \tag{41}\]
+Optimal pris i sluttmarkedet:
+
+\[P^* = a - b(Q_G^*+Q_M^*) = 175 - 2 \cdot (28+28) = 175 - (2 \cdot 58)  = 175 - 116 = 63 \tag{42}\]
+
+Setter så inn \(Q_G^*\) og \(Q_M^*\) i profittfunksjonen for Graff
+Brygghus og Mack Mikrobrygg 13 for å finne profitten for hvert bryggeri
+og trekker fra faste kostnader (her er kvantum ganget med 1000 slik at
+det blir direkte profitt):
+
+\[ \pi_G = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{43}\]
+
+\[ \pi_M = \frac{1000(a-c)^2}{9b} -f_k = \frac{1000(175-7)^2}{9 \cdot 2} -500000 = 1068000 \tag{44}\]
+
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg
+13 blir 1.068.000 kr hver før fusjon, kvantumet solgt blir 28 i tusener
+hver og pris til nedstrømsbedrift blir 63 kroner per flaske.
+
+\clearpage
+
+\subsection{Monopoltilpasning ved at Mack Mikrobrygg 13 og Graff
+Brygghus
+fusjonerer}\label{monopoltilpasning-ved-at-mack-mikrobrygg-13-og-graff-brygghus-fusjonerer}
+
+Regner på en monopoltilpasning for Mack Mikrobrygg 13 og Graff Brygghus
+etter fusjon. Begynner ved nedstrømsbedriften:
+
+\[P_n = a − b(Q) \tag{45}\] Marginalinntekten er gitt ved:
+
+\[MR_n = a - 2bQ \tag{46}\] og nedstrømsbedriften har en marginalkostnad
+som er \(r\).
+
+Setter så marginalinntekten lik marginalkostnaden for å finne optimalt
+kvantum:
+
+\[a - 2bQ = r \tag{47}\] Løser så for optimalt kvantum:
+
+\[Q^* = \frac{a - r}{2b} = \frac{175 - r}{4} \tag{48}\] Setter så
+optimalt kvantum inn i etterspørselsfunksjonen for å finne optimal pris,
+simplifisert får man da:
+
+\[P{_n^*} = \frac{r}{2} \frac{175}{2} \tag{49}\] Videre så har
+oppstrømsbedriften dobbel marginalisering, så etterspørsel og
+marginalinntekten blir:
+
+\[P_r = a - 2*bQ \tag{50}\] \[MR_r = a - 2bQ \tag{51}\] Setter så
+marginalinntekten lik marginalkostnaden for å finne optimalt kvantum:
+
+\[a - 2bQ = c = 175 - 8 = 7\tag{52}\] Løser så for optimalt kvantum for
+oppstrømsbedriften:
+
+\[Q^* = \frac{a - c}{4b} = \frac{175 - 7}{8} = 21\tag{53}\]
+
+Setter så optimalt kvantum inn i etterspørselsfunksjonen for å finne
+optimal pris:
+
+\[P{_r^*} = \frac{a}{2} + \frac{c}{2} = \frac{175}{2} + \frac{7}{2} = 91\tag{54}\]
+Finner så prisen til sluttbruker ved å sette inn optimal pris fra
+oppstrømsbedriften i etterspørselsfunksjonen til nedstrømsbedriften:
+
+\[P{_n^*} = \frac{3a}{4} + \frac{c}{4} = \frac{3 \cdot 175}{4} + \frac{7}{4} = 133 \tag{55}\]
+Optimalt kvantum blir da det samme i sluttmarked ved å sette inn optimal
+kvantum fra oppstrømsbedriften i etterspørselsfunksjonen til
+nedstrømsbedriften:
+
+\[Q^* = \frac{a - c}{8b} = \frac{175 - 7}{8 \cdot 2} = 21 \tag{56}\]
+Profitt for oppstrømsbedriften blir da:
+
+\[\pi_r = \frac{(125a - c)^2}{b} - fk_r = \frac{(125 \cdot 175- 7)^2}{2}= 1264000 \tag{57}\]
+og profitt for nedstrømsbedriften blir:
+
+\[\pi_n = \frac{(125a - c)^2}{2b} - fk_n = \frac{(125 \cdot 175- 7)^2}{4}= 282000\tag{58}\]
+
+Dette forteller oss at profitten for Graff Brygghus og Mack Mikrobrygg
+13 blir 1.264.000 kr før fusjon hver for seg og 282.000 kr etter fusjon,
+kvantumet solgt blir 21 i tusener og pris til nedstrømsbedrift blir 133
+kroner per flaske.
+
+Må se over dette imorgen lmao for kokt å jobbe med nå.
+
+Hva blir de samfunnsøkonomiske konsekvensene av en fusjon mellom Mack
+Mikrobrygg 13 og Graff Brygghus.
 
 \clearpage
 
@@ -1409,6 +1503,254 @@ $\displaystyle 95.02$
 \end{Shaded}
 
 \includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-41-output-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Markedet etter fusjon med to symmetriske bedrifter under cournot konkurranse}
+
+\CommentTok{\# Oppgave 2b}
+\CommentTok{\# q\_g er kvantum til Graff brygghus}
+\CommentTok{\# q\_bm blir kvantum til Mack mikrobrygg 13}
+\CommentTok{\# ny fk for den fusjonerte bedriften blir 500 000 samt for Graff brygghus}
+\CommentTok{\# c\_g = c\_bm = 7 siden de er symmetriske og graff har nytt produksjonsutstyr}
+
+\CommentTok{\# regner cournot likevekt}
+\NormalTok{q\_g, q\_bm, a, b, f\_k,c, f\_k\_bm}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}q\_g c\_bm a b f\_k c f\_k\_bm\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{a }\OperatorTok{=} \DecValTok{175}
+\CommentTok{\# Ny etterspørsel}
+\NormalTok{b }\OperatorTok{=} \DecValTok{2}
+\NormalTok{c }\OperatorTok{=} \DecValTok{7}
+\NormalTok{f\_k }\OperatorTok{=} \DecValTok{500000}
+
+\KeywordTok{def}\NormalTok{ P\_demand(Q,a,b):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{Q}
+
+
+\KeywordTok{def}\NormalTok{ profit(q\_g,q\_bm,c,a,b):}
+    \ControlFlowTok{return}\NormalTok{ (P\_demand(q\_g}\OperatorTok{+}\NormalTok{q\_bm,a,b)}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{q\_g}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_profit1\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_g,q\_bm,c,a,b),q\_g)}
+\NormalTok{d\_profit2\_Q}\OperatorTok{=}\NormalTok{sp.diff(profit(q\_bm,q\_g,c,a,b),q\_bm)}
+
+
+\NormalTok{display(d\_profit1\_Q)}
+\NormalTok{display(d\_profit2\_Q)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle - 2 c_{bm} - 4 q_{g} + 168$
+
+$\displaystyle - 4 c_{bm} - 2 q_{g} + 168$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Kvantum er i tusener}
+
+\NormalTok{sol}\OperatorTok{=}\NormalTok{sp.solve([d\_profit1\_Q,d\_profit2\_Q],[q\_g,q\_bm])}
+
+\CommentTok{\# Kvantum til Graff brygghus}
+\NormalTok{display(sol[q\_g])}
+\CommentTok{\# Kvantum til fusjonert bedrift}
+\NormalTok{display(sol[q\_bm])}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 28$
+
+$\displaystyle 28$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ P\_demand(q\_g,q\_bm):}
+    \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}\OperatorTok{*}\NormalTok{(q\_g}\OperatorTok{+}\NormalTok{q\_bm)}
+
+\CommentTok{\# Optimal pris i sluttmarkedet:}
+\NormalTok{P\_opt}\OperatorTok{=}\NormalTok{P\_demand(q\_g,q\_bm).subs(\{q\_g:sol[q\_g],q\_bm:sol[q\_bm]\})}
+
+\NormalTok{P\_opt}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 63$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for (Graff brygghus):}
+\NormalTok{display(sp.simplify((P\_opt}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{(sol[q\_g])}\OperatorTok{*}\DecValTok{1000}\OperatorTok{{-}}\NormalTok{f\_k))}
+
+\CommentTok{\# profitt for fusjonert bedrift}
+\NormalTok{display(sp.simplify((P\_opt}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{(sol[q\_bm]}\OperatorTok{*}\DecValTok{1000}\NormalTok{)}\OperatorTok{{-}}\NormalTok{f\_k))}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 1068000$
+
+$\displaystyle 1068000$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Figur for markedet før fusjon}
+\NormalTok{labels }\OperatorTok{=} \StringTok{\textquotesingle{}Graff Brygghus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Mack Mikrobrygg 13\textquotesingle{}}
+\NormalTok{sizes }\OperatorTok{=}\NormalTok{ [sol[q\_g],sol[q\_bm]]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{]}
+\NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
+\NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
+\NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/fusjonert\_bedrift\_symmetrisk.png\textquotesingle{}}\NormalTok{, bbox\_inches}\OperatorTok{=}\StringTok{\textquotesingle{}tight\textquotesingle{}}\NormalTok{, dpi}\OperatorTok{=}\DecValTok{600}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-47-output-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Oppstrømsbedriftene er bryggeriene}
+\CommentTok{\# Nedstrømsbedriften er Restaurant Gruppen Holding (RGH)}
+\CommentTok{\# Tilpasning ved monopol for oppstrøm og nedstrømsbedriftene}
+
+
+\NormalTok{A, B,Qd,Qr,QI,P,c, r}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}A B Qd Qr QI P c r\textquotesingle{}}\NormalTok{)}
+
+
+\NormalTok{A }\OperatorTok{=} \DecValTok{175}
+\NormalTok{B }\OperatorTok{=} \DecValTok{2}
+\NormalTok{c }\OperatorTok{=} \DecValTok{7}
+
+\KeywordTok{def}\NormalTok{ demand(Q):}
+    \ControlFlowTok{return}\NormalTok{ (A}\OperatorTok{{-}}\NormalTok{B}\OperatorTok{*}\NormalTok{Q)}
+
+\KeywordTok{def}\NormalTok{ marginalrevenue(Q):}
+    \ControlFlowTok{return}\NormalTok{ (A}\OperatorTok{{-}}\DecValTok{2}\OperatorTok{*}\NormalTok{B}\OperatorTok{*}\NormalTok{Q)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Q}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}Q\textquotesingle{}}\NormalTok{, real}\OperatorTok{=}\VariableTok{True}\NormalTok{, positive}\OperatorTok{=}\VariableTok{True}\NormalTok{)}
+\NormalTok{equ}\OperatorTok{=}\NormalTok{sp.Eq(marginalrevenue(Q),r)}
+\NormalTok{equ}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 175 - 4 Q = r$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Qd\_equ}\OperatorTok{=}\NormalTok{sp.solve(equ,Q)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Qd\_equ}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{175}{4} - \frac{r}{4}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{P\_eq}\OperatorTok{=}\NormalTok{demand(Qd\_equ)}
+\NormalTok{P\_eq}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle \frac{r}{2} + \frac{175}{2}$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ demand(Qr):}
+    \ControlFlowTok{return}\NormalTok{ (A}\OperatorTok{{-}}\DecValTok{2}\OperatorTok{*}\NormalTok{B}\OperatorTok{*}\NormalTok{Qr)}
+
+\KeywordTok{def}\NormalTok{ marginalrevenue(Qr):}
+    \ControlFlowTok{return}\NormalTok{ (A}\OperatorTok{{-}}\DecValTok{4}\OperatorTok{*}\NormalTok{B}\OperatorTok{*}\NormalTok{Qr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Qr}\OperatorTok{=}\NormalTok{sp.symbols(}\StringTok{\textquotesingle{}Qr\textquotesingle{}}\NormalTok{, real}\OperatorTok{=}\VariableTok{True}\NormalTok{, positive}\OperatorTok{=}\VariableTok{True}\NormalTok{)}
+\NormalTok{equ}\OperatorTok{=}\NormalTok{sp.Eq(marginalrevenue(Qr),c)}
+\NormalTok{equ}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 175 - 8 Qr = 7$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Qr\_equ}\OperatorTok{=}\NormalTok{sp.solve(equ,Qr)[}\DecValTok{0}\NormalTok{]}
+\NormalTok{Qr\_equ}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 21$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# optimal pris fra oppstrømsbedriften}
+\NormalTok{r\_eq}\OperatorTok{=}\NormalTok{demand(Qr\_equ)}
+\NormalTok{r\_eq}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 91$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Finner pris ved å sette totalt kvantum og pris fra oppstrømsbedriften inn i etterspørselen til nedstrømsbedriften}
+\NormalTok{P\_eq.subs(\{Qd:Qd\_equ,r:r\_eq\})}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 133$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Optimal kvantum i sluttmarkedet:}
+\NormalTok{Qd\_opt}\OperatorTok{=}\NormalTok{Qd\_equ.subs(\{r:r\_eq\})}
+\NormalTok{sp.simplify(Qd\_opt)}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 21$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for oppstrømsbedriften ved monopol og fusjon}
+\KeywordTok{def}\NormalTok{ profitt(Qr):}
+    \ControlFlowTok{return}\NormalTok{ (r\_eq}\OperatorTok{{-}}\NormalTok{c)}\OperatorTok{*}\NormalTok{Qr\_equ}
+
+\NormalTok{sp.simplify(profitt(Qr\_equ))}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 1764$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# profitt for nedstrømsbedriften}
+\KeywordTok{def}\NormalTok{ profitt(Qd):}
+    \ControlFlowTok{return}\NormalTok{ (P\_eq.subs(\{Qd:Qd\_equ,r:r\_eq\})}\OperatorTok{{-}}\NormalTok{r\_eq)}\OperatorTok{*}\NormalTok{Qd\_equ.subs(\{Qd:Qd\_equ,r:r\_eq\})}
+
+\NormalTok{sp.simplify(profitt(Qr\_equ))}
+\end{Highlighting}
+\end{Shaded}
+
+$\displaystyle 882$
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Lager figur som viser hvor stor andel av markedet hver bedrift har ved bruk av monopol}
+\NormalTok{labels }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}Mack Mikrobryggeri 13\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}RGH\textquotesingle{}}\NormalTok{]}
+\NormalTok{sizes }\OperatorTok{=}\NormalTok{ [Qr\_equ,Qd\_opt]}
+\NormalTok{colors }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}\#A42820\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}\#5F5647\textquotesingle{}}\NormalTok{]}
+\NormalTok{explode }\OperatorTok{=}\NormalTok{ (}\FloatTok{0.1}\NormalTok{, }\DecValTok{0}\NormalTok{)  }\CommentTok{\# explode 1st slice}
+\NormalTok{plt.pie(sizes, explode}\OperatorTok{=}\NormalTok{explode, labels}\OperatorTok{=}\NormalTok{labels, colors}\OperatorTok{=}\NormalTok{colors, autopct}\OperatorTok{=}\StringTok{\textquotesingle{}}\SpecialCharTok{\%1.1f\%\%}\StringTok{\textquotesingle{}}\NormalTok{, startangle}\OperatorTok{=}\DecValTok{140}\NormalTok{)}
+\NormalTok{plt.savefig(}\StringTok{\textquotesingle{}dokumentobjekter/figurer/monopol\_oppstrøm\_nedstrøm.png\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Kandidatnummer_30_mappeoppgave_2_SOK_2030_files/figure-pdf/cell-60-output-1.pdf}
 
 
 
